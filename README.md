@@ -43,6 +43,6 @@ INSTALL
 
 Make sure to have write access to your flightgear root directory.
 
-Copy output the folder 'output' into your flightgear root directory.
+Copy the content of repo folder 'output' into your flightgear root directory.
 
 Note: This package does currently not contain the terrain, it must be downloaded and installed before.
