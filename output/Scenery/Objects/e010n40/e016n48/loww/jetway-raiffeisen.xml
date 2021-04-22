@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>jetway-4-5m.ac</path>
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5000</max-m>
+ </animation>
+ 
+ <animation>
+  <type>material</type> 
+  <object-name>jour</object-name>
+  <texture>jetway-raiffeisen.png</texture>
+ </animation>
+ 
+</PropertyList>
