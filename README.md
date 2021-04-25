@@ -25,15 +25,15 @@ TODO
 
 -group into 5-10 building clusters instead of one large model
 
--align jetways correctly to terminals                                   .. done
+-high-res terrain
 
 -implement building night textures
 
--add apron objects and static aircraft from Flightgear object library
+-add more apron objects and static aircraft from Flightgear object library
 
 -add missing buildings of the surrounding from OSM and texture them
 
--update ground network
+-fix missing apron section in GA area
 
 FORUM
 
