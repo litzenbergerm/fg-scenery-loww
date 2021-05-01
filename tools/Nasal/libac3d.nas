@@ -159,7 +159,7 @@ var Ac3d = {
         
         foreach(var k; idx) {
             if (k>l-1)
-                die("addsurf:vertex index is out of bounds");
+                die("libac3d.addsurf:vertex index is out of bounds");
             append( me.obj[objidx].surf[-1].refs, [k,0,0] );
         }           
     },
@@ -249,7 +249,7 @@ var Ac3d = {
         
         # check if all vertices are in a x,y,z - plane
         if (me.inplane(idx, objidx)==-1) 
-            die("fill: needs vertices in x,y or z-plane");
+            die("libac3d.fill: needs vertices in x,y or z-plane");
         
         # fill a polygon        
         var poly = deepcopy(idx);
@@ -328,15 +328,15 @@ var Ac3d = {
         return -1;
     },    
         
-    parseobj: func(s) {
-        var name= parsefromto(s,"name ");
-        var text= parsefromto(s,",texture ");
-        var loc = parsefromto(s,",loc ");
-        var vert= parsefromto(s,",numvert ","numsurf ");
-        var surf= parsefromto(s,",numsurf ","kids ");
-        var dat = parsefromto(s, ",data ");
-        var rot = parsefromto(s, ",rot ");
-        var rep = parsefromto(s, ",texrep ");
+    parseobj: func(h, v, s) {
+        var name= parsefromto(h,"name ");
+        var text= parsefromto(h,",texture ");
+        var loc = parsefromto(h,",loc ");
+        var dat = parsefromto(h, ",data ");
+        var rot = parsefromto(h, ",rot ");
+        var rep = parsefromto(h, ",texrep ");
+        var vert= v;
+        var surf= s;
     
         var oo = me.newobj();
         if (name != nil) 
@@ -346,7 +346,7 @@ var Ac3d = {
         if (loc != nil) 
             oo.loc = split(" ",loc);
         if (dat != nil)
-            oo.data = substr(s, find("data "~dat, s), dat);
+            oo.data = substr(h, find("data "~dat, h), dat);
         if (rep != nil)
             oo.texrep = split(" ", rep);
 
@@ -408,27 +408,66 @@ var Ac3d = {
     load: func(fn) {
         var file = io.open(fn);
         var line = io.readln(file);
-        var o = "";
+        var h = ""; #header
+        var v = ""; #vertices
+        var s = ""; #surfaces
+        var l = 0;
+        
+        var q = [];
         
         if (line != ACSECRET)
-            die("libac3d: Error load - not an AC3D file!");
+            die("libac3d.load: Error - not an AC3D file!");
         
         # read line by line from OBJECT to OBJECT and separate by ,
         while (line != nil) {
           
-          o = o ~ line ~ ",";
+          if (substr(line, 0, 4) == "kids") {
+             #print("surfs->",size(q));
+             s = string.join(",", q)~",";  
+             q = [];          
+          }
+              
+          if (substr(line, 0, 7) == "numvert") {
+             #print("header->",size(q));
+             h = string.join(",", q)~",";  
+             q = [];          
+          }
+          
+          if (substr(line, 0, 7) == "numsurf") {
+             #print("verts->",size(q));
+             v = string.join(",", q)~",";  
+             q = [];          
+          }
+          
+          # end of an object or world          
           if (substr(line, 0, 4) == "kids") {
 
-               if (substr(o, 0, 5) == ACSECRET) {
-                 me.header = substr(o, find("OBJECT ", o), find(",kids",o));
-                 me.mat = me.parsemat(o);
+               if (substr(s, 0, 5) == ACSECRET) {
+                 # this is the header of the ac file  
+                 me.header = substr(s, find("OBJECT ", s) );
+                 me.mat = me.parsemat(s);
                } else {
-                 append(me.obj, me.parseobj(o));
+                 #print(h,"***",v,"***",s);  
+                 append(me.obj, me.parseobj(h, v, s));
                }
           }
-
+          
+          l += size(line);
+          
+          if (l < 500000) { 
+            # append lines to buffer q
+            append(q, line);
+          } else {
+            die("libac3d.load : Error - buffer > 500kb, cannot load this ac file.");
+          }
+          
+          #new object start
           if (line == "OBJECT poly") {
-             o = "";
+             h = "";
+             v = "";
+             s = "";
+             q = [];
+             l = 0;
           }
           
           var line = io.readln(file);
@@ -538,38 +577,61 @@ var Ac3d = {
         me.obj=[oo,];   
     },
     
-    addac: func(ac) {
+    addac: func(ac, objidx=-1) {
+        
+        # objidx=-1 means all objects of ac
         
         var matoffset=size(me.mat);
+        var newmats = [];
         
         if(me.header == "") 
            me.header = ac.header;
         
-        foreach (var x; ac.mat)  
-            append(me.mat, x);
-
+        var j=0;
+        
         foreach (var x; ac.obj) {
-            #Correct material index in surfs,
-            #vector slicing is needed to make a copy!
-            var newsurf = [];
-            foreach (var s; x.surf) {
-               append(newsurf, {
-                   mat: s.mat+matoffset,
-                   refs: s.refs[:],
-                   flag: s.flag
-               });
+            
+            # add this object? -1 means all!
+            
+            if (objidx==-1 or j==objidx) {
+                #Correct material index in surfs,
+                #vector slicing is needed to make a copy!
+                
+                var newsurf = [];
+                foreach (var s; x.surf) {
+                    #check for a new material to add
+                    var idx = isin(s.mat, newmats);
+                                
+                    if (idx == -1) {
+                        #add to materials
+                        append(newmats, s.mat);
+                        idx=size(newmats)-1;
+                    }
+                    
+                    append(newsurf, {
+                        mat: matoffset + idx,
+                        refs: s.refs[:],
+                        flag: s.flag
+                    });
+                }
+                
+                append(me.obj, {
+                    name: x.name,
+                    data: x.data,
+                    texture: x.texture,
+                    loc: x.loc[:],
+                    texrep: x.texrep[:],
+                    vert: x.vert[:],
+                    surf: newsurf }
+                );
             }
-              
-            append(me.obj, {
-              name: x.name,
-              data: x.data,
-              texture: x.texture,
-              loc: x.loc[:],
-              texrep: x.texrep[:],
-              vert: x.vert[:],
-              surf: newsurf }
-            );
+            j+=1;
         }
+        
+        #add new materials to list
+        foreach (var x; newmats)  
+            append(me.mat, ac.mat[x]);
+
     },
         
     transobj: func(t, idx=-1) {
@@ -579,7 +641,7 @@ var Ac3d = {
         if (idx == -1)
           idx=size(me.obj)-1;
           
-        if (me.obj[idx] == nil) {
+        if (me.obj[idx].loc == nil) {
           me.obj[idx].loc = [t[0], t[1], t[2]];
         } else {  
           me.obj[idx].loc = add3d(me.obj[idx].loc, t);
@@ -642,12 +704,12 @@ var Ac3d = {
     inside3: func(idx, p, objidx=-1) {
  
         if (size(idx)!=3)
-            die("inside: argument 1 must be a triangle");
+            die("libac3d.inside: argument 1 must be a triangle");
 
         var inplane = me.inplane(idx, objidx);
 
         if (inplane==-1)
-            die("inside3: all 4 points must lie in the x,y or z plane");
+            die("libac3d.inside3: all 4 points must lie in the x,y or z plane");
 
         # select the dimension of the plane in which the 3 points lie
         var dim = otherdims(inplane);
@@ -673,12 +735,12 @@ var Ac3d = {
     isconvex3: func(idx, objidx=-1) {
  
         if (size(idx)!=3)
-            die("isconvex3: argument 1 must be a triangle");
+            die("libac3d.isconvex3: argument 1 must be a triangle");
 
         var inplane = me.inplane(idx, objidx);
 
         if (inplane==-1)
-            die("isconvex3: all 3 points must lie in the x,y or z plane");
+            die("libac3d.isconvex3: all 3 points must lie in the x,y or z plane");
         
         var vert=me.obj[objidx].vert;
         
@@ -716,7 +778,7 @@ var test = func() {
   
   
   foreach( var wi; [15,30,45.0,60.0,90.0,125,180.0]) {
-    out.addac(ac1, "obj."~wi);
+    out.addac(ac1);
     out.transobj(bl2ac( [0, 0, wi/18]) );
     out.rotobjY(wi);
     out.rotobjY(wi, out.numobj()-2);

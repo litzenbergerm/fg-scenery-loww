@@ -12,6 +12,16 @@ var add3d = func(a,b) { return [a[0]+b[0], a[1]+b[1], a[2]+b[2]] };
 var sub3d = func(a,b) { return [a[0]-b[0], a[1]-b[1], a[2]-b[2]] };
 var equal3d = func(a,b) { return (a[0]==b[0] and a[1]==b[1] and a[2]==b[2]) };
 
+
+var isin = func (needle, haystack) {
+  var i=0;
+  foreach (x; haystack) {
+    if (x==needle) return i;
+    i += 1;
+    }
+  return -1;
+}
+
 var dsquare = func(a,b) { 
    var d=sub3d(a,b);
    return ( d[0]*d[0] + d[1]*d[1] + d[2]*d[2]);
@@ -87,11 +97,25 @@ var Dwgs2xy = func(from, to) {
   var lat2 = to.lat();
   var lon2 = to.lon();
   
-  var x = -ECIRC*(lat2-lat1);
-  var y = math.cos((lat1+lat2)*0.5*D2R)*ECIRC*(lon2-lon1);
-  var z = to.alt() - from.alt();
+  return [ -ECIRC*(lat2-lat1) ,
+           math.cos((lat1+lat2)*0.5*D2R)*ECIRC*(lon2-lon1) ,
+           to.alt() - from.alt()
+         ];
   
-  return [x,y,z];
+};
+
+var Dxy2wgs = func(base, offset) {
+  # in fg scenery :
+  # blender +y is east
+  # blender +x is south
+  # blender +z is up
+ 
+  return geo.Coord.new().set_latlon(
+                 base.lat() - (offset[0] / ECIRC) ,
+                 base.lon() + (offset[1] / math.cos(base.lat()*D2R) / ECIRC) ,
+                 base.alt() +  offset[2] 
+                 );
+                 
 };
 
 var add2stg = func(stg, pos, line) {
@@ -104,3 +128,11 @@ var add2stg = func(stg, pos, line) {
   
   stg[tilex] ~= line ~ "\n";
 }
+
+var geoinside = func (geo, bbox) {
+  #bbox=left right up down
+  
+  if (geo.lon()<bbox[0] or geo.lon()>bbox[1]) return 0; 
+  if (geo.lat()<bbox[3] or geo.lat()>bbox[2]) return 0; 
+  return 1;
+};
