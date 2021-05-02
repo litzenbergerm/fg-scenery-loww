@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+<path>loww-ga.ac</path>
+<animation>
+  <type>material</type>
+  <object-name>140</object-name>
+  <texture>Westend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>234_235</object-name>
+  <texture>Westend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>315</object-name>
+  <texture>971-988_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>315a</object-name>
+  <texture>971-988_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>328</object-name>
+  <texture>Westend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>334</object-name>
+  <texture>Westend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>455</object-name>
+  <texture>Westend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>700.002</object-name>
+  <texture>Eastend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>854+855</object-name>
+  <texture>Westend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>854+855.001</object-name>
+  <texture>Westend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>856</object-name>
+  <texture>Westend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>building.194</object-name>
+  <texture></texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>GAC_West</object-name>
+  <texture>Westend2_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+</PropertyList>

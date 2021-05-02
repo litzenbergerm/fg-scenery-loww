@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+<path>loww-hangars.ac</path>
+<animation>
+  <type>material</type>
+  <object-name>240-262</object-name>
+  <texture>261_240-270_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>950</object-name>
+  <texture>210_215_220_950_951_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>frachtabfertigung</object-name>
+  <texture>fracht_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+</PropertyList>
