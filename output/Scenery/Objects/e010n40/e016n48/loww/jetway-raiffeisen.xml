@@ -14,5 +14,21 @@
   <object-name>jour</object-name>
   <texture>jetway-raiffeisen.png</texture>
  </animation>
+
+ <animation>
+  <type>textranslate</type> 
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <object-name>jour</object-name>
+  <bias>0.5</bias>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+  </axis> 
+ </animation>
  
 </PropertyList>

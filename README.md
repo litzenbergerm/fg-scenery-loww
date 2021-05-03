@@ -23,11 +23,7 @@ See details in CONSENT_XPLANE_AUTHORS
 
 TODO
 
--group into 5-10 building clusters instead of one large model
-
 -high-res terrain
-
--implement building night textures
 
 -add more apron objects and static aircraft from Flightgear object library
 
