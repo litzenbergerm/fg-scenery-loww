@@ -985,7 +985,133 @@
 <animation>
   <type>material</type>
   <object-name>Cube.021</object-name>
-  <texture></texture>
+  <texture>loww-fest_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>Cube.022</object-name>
+  <texture>loww-fest_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>Cube.023</object-name>
+  <texture>loww-fest_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>Cube.024</object-name>
+  <texture>loww-fest_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>Cube.025</object-name>
+  <texture>loww-fest_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>Cube.026</object-name>
+  <texture>loww-fest_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>Cube.027</object-name>
+  <texture>loww-fest_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>Cube.028</object-name>
+  <texture>loww-fest_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>Cube.029</object-name>
+  <texture>loww-fest_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>Cube.030</object-name>
+  <texture>loww-fest_LIT.png</texture>
   <condition>
     <greater-than>
     <property>/sim/time/sun-angle-rad</property>
