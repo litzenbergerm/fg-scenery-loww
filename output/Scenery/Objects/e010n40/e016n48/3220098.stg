@@ -19,7 +19,7 @@ OBJECT_SHARED Models/Airport/localizer.xml 16.5927 48.085417 167.95 254.24
 # LOWW tower from terrasync
 OBJECT_STATIC LOWW_tower.xml 16.56169 48.12259 171.27 225
 
-# static airport objects
+# static airport objects, buildings
 
 OBJECT_STATIC loww/loww-ga.xml 16.53630165437386 48.12886540745437 172.0840332478312 0.0
 OBJECT_STATIC loww/loww-north.xml 16.54820807949886 48.12689419041671 173.1682694218717 0.0
