@@ -4,20 +4,6 @@
 <path>loww-north.ac</path>
 <animation>
   <type>material</type>
-  <object-name>229</object-name>
-  <texture>loww-fest_LIT.png</texture>
-  <condition>
-    <greater-than>
-    <property>/sim/time/sun-angle-rad</property>
-    <value>1.57</value>
-    </greater-than>
-  </condition>
-  <emission>
-     <red>1</red><green>1</green><blue>1</blue>
-  </emission>
-</animation>
-<animation>
-  <type>material</type>
   <object-name>262-263</object-name>
   <texture>261_240-270_LIT.png</texture>
   <condition>
@@ -802,34 +788,6 @@
 </animation>
 <animation>
   <type>material</type>
-  <object-name>building.184</object-name>
-  <texture>loww-fest_LIT.png</texture>
-  <condition>
-    <greater-than>
-    <property>/sim/time/sun-angle-rad</property>
-    <value>1.57</value>
-    </greater-than>
-  </condition>
-  <emission>
-     <red>1</red><green>1</green><blue>1</blue>
-  </emission>
-</animation>
-<animation>
-  <type>material</type>
-  <object-name>building.189</object-name>
-  <texture></texture>
-  <condition>
-    <greater-than>
-    <property>/sim/time/sun-angle-rad</property>
-    <value>1.57</value>
-    </greater-than>
-  </condition>
-  <emission>
-     <red>1</red><green>1</green><blue>1</blue>
-  </emission>
-</animation>
-<animation>
-  <type>material</type>
   <object-name>building.227</object-name>
   <texture></texture>
   <condition>
@@ -982,20 +940,7 @@
      <red>1</red><green>1</green><blue>1</blue>
   </emission>
 </animation>
-<animation>
-  <type>material</type>
-  <object-name>ec135</object-name>
-  <texture>ec135-02_LIT.png</texture>
-  <condition>
-    <greater-than>
-    <property>/sim/time/sun-angle-rad</property>
-    <value>1.57</value>
-    </greater-than>
-  </condition>
-  <emission>
-     <red>1</red><green>1</green><blue>1</blue>
-  </emission>
-</animation>
+
 <animation>
   <type>material</type>
   <object-name>PortalWest</object-name>
