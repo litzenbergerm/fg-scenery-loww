@@ -16,11 +16,23 @@ OBJECT_SHARED Models/Airport/localizer.xml 16.576778 48.123064 171.39 74.23
 OBJECT_SHARED Models/Airport/localizer.xml 16.589522 48.104517 179.31 206.03
 OBJECT_SHARED Models/Airport/localizer.xml 16.5927 48.085417 167.95 254.24
 
-# FEST Flugeinsatzstelle (police hangar)
+# FEST Flugeinsatzstelle (police hangar and helipad)
 
 OBJECT_STATIC loww/loww-fest.xml 16.54261229 48.13066797 168.3 0.0
 OBJECT_SHARED Scenery/Models/Airport/windsock.xml 16.54226397 48.13039129 174.0 0.0
 OBJECT_SHARED Scenery/Models/Airport/extinguisher.ac 16.54227911 48.13052323 168.2662 0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54271530 48.13069057 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54263468 48.13059916 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54249213 48.13065362 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54257239 48.13074767 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54267689 48.13070756 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54261220 48.13073168 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54254683 48.13071944 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54251466 48.13068141 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54253101 48.13063901 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54259561 48.13061396 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54265722 48.13062432 168.28 0.0 0.0 -0.0
+OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54268635 48.13065724 168.28 0.0 0.0 -0.0
 
 # LOWW tower from terrasync
 
