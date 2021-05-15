@@ -18,7 +18,7 @@ OBJECT_SHARED Models/Airport/localizer.xml 16.5927 48.085417 167.95 254.24
 
 # FEST Flugeinsatzstelle (police hangar and helipad)
 
-OBJECT_STATIC loww/loww-fest.xml 16.54261229 48.13066797 168.3 0.0
+OBJECT_STATIC loww/loww-fest.xml 16.54261229 48.13066797 168.25 0.0
 OBJECT_SHARED Scenery/Models/Airport/windsock.xml 16.54226397 48.13039129 174.0 0.0
 OBJECT_SHARED Scenery/Models/Airport/extinguisher.ac 16.54227911 48.13052323 168.2662 0.0
 OBJECT_SHARED Models/Effects/helipad_light_green_2st.xml 16.54271530 48.13069057 168.28 0.0 0.0 -0.0

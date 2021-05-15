@@ -32,4 +32,20 @@
   </emission>
 </animation>
 
+<animation>
+  <type>material</type>
+  <object-name>padmarking</object-name>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.54</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>0.65</red>
+     <green>0.65</green>
+     <blue>0.65</blue>
+  </emission>
+</animation>
+
 </PropertyList>
