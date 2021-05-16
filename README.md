@@ -35,10 +35,11 @@ FORUM
 
 https://forum.flightgear.org/viewtopic.php?f=5&t=14132&start=75
 
-
 INSTALL
 
 Make sure to have write access to your flightgear root directory.
+
+Make a backup copy of 3220098.stg in Scenery/Objects/e010n40/e016n48, it will be overwritten!
 
 Copy the content of repo folder 'output' into your flightgear root directory.
 
