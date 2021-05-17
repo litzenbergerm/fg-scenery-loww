@@ -8,7 +8,7 @@ AUTHORS (Flightgear)
 
 powoflight: X-Plane to Flightgear model conversion.
 
-Martin Litzenberger (litzi on forum): 3D models- and mesh-optimization. Additional OSM buildings.
+Martin Litzenberger (litzi on forum): 3D models- and mesh-optimization. Additional buildings. Police helicopter base (Flugeinsatzstelle - FEST). 
 
 
 AUTHORS (X-Plane)
