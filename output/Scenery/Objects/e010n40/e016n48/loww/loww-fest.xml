@@ -1,68 +1,199 @@
 <?xml version="1.0"?>
 <PropertyList>
 
-<path>loww-fest.ac</path>
-<animation>
-  <type>material</type>
-  <object-name>229</object-name>
-  <texture>loww-fest_LIT.png</texture>
-  <condition>
-    <greater-than>
-    <property>/sim/time/sun-angle-rad</property>
-    <value>1.54</value>
-    </greater-than>
-  </condition>
-  <emission>
-     <red>1</red><green>1</green><blue>1</blue>
-  </emission>
-</animation>
+    <path>loww-fest.ac</path>
+    <animation>
+    <type>material</type>
+    <object-name>229</object-name>
+    <texture>loww-fest_LIT.png</texture>
+    <condition>
+        <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.54</value>
+        </greater-than>
+    </condition>
+    <emission>
+        <red>1</red><green>1</green><blue>1</blue>
+    </emission>
+    </animation>
 
-<animation>
-  <type>material</type>
-  <object-name>building.189</object-name>
-  <texture>loww-fest-pad_LIT.png</texture>
-  <condition>
-    <greater-than>
-    <property>/sim/time/sun-angle-rad</property>
-    <value>1.54</value>
-    </greater-than>
-  </condition>
-  <emission>
-     <red>1</red><green>1</green><blue>1</blue>
-  </emission>
-</animation>
+    <animation>
+    <type>material</type>
+    <object-name>building.189</object-name>
+    <texture>loww-fest-pad_LIT.png</texture>
+    <condition>
+        <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.54</value>
+        </greater-than>
+    </condition>
+    <emission>
+        <red>1</red><green>1</green><blue>1</blue>
+    </emission>
+    </animation>
 
-<animation>
-  <type>material</type>
-  <object-name>padmarking</object-name>
-  <condition>
-    <greater-than>
-    <property>/sim/time/sun-angle-rad</property>
-    <value>1.54</value>
-    </greater-than>
-  </condition>
-  <emission>
-     <red>0.65</red>
-     <green>0.65</green>
-     <blue>0.65</blue>
-  </emission>
-</animation>
+    <animation>
+    <type>material</type>
+    <object-name>padmarking</object-name>
+    <condition>
+        <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.54</value>
+        </greater-than>
+    </condition>
+    <emission>
+        <red>0.65</red>
+        <green>0.65</green>
+        <blue>0.65</blue>
+    </emission>
+    </animation>
 
-<animation>
-  <type>material</type>
-  <object-name>signpost</object-name>
-  <texture>loww-signpost_LIT.png</texture>
-  <condition>
-    <greater-than>
-    <property>/sim/time/sun-angle-rad</property>
-    <value>1.57</value>
-    </greater-than>
-  </condition>
-  <emission>
-     <red>1</red>
-     <green>1</green>
-     <blue>1</blue>
-  </emission>
-</animation>
+    <animation>
+    <type>material</type>
+    <object-name>signpost</object-name>
+    <texture>loww-signpost_LIT.png</texture>
+    <condition>
+        <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.57</value>
+        </greater-than>
+    </condition>
+    <emission>
+        <red>1</red>
+        <green>1</green>
+        <blue>1</blue>
+    </emission>
+    </animation>
+
+    <!--green lights on pad-->
+    
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>-2.599</x-m>
+            <y-m>6.7889</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>6.957</x-m>
+            <y-m>1.367</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>1.592</x-m>
+            <y-m>-8.043</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>-8.0</x-m>
+            <y-m>-2.611</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>-4.06</x-m>
+            <y-m>4.236</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>-6.36</x-m>
+            <y-m>0.249</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>0.376</x-m>
+            <y-m>5.1</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>4.07</x-m>
+            <y-m>3.02</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>5.36</x-m>
+            <y-m>-1.462</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>3.41</x-m>
+            <y-m>-4.90</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>-1.21</x-m>
+            <y-m>-6.48</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    <model>
+        <path>Models/Effects/helipad_light_green_2st.xml</path>
+        <offsets>
+            <x-m>-5.2</x-m>
+            <y-m>-4.19</y-m>
+            <z-m>0.01</z-m>
+        </offsets>
+    </model>
+    
+    <!--obstruction light on hangar-->
+    <model>
+    <path>Models/Effects/pos_lamp_red_light_2st.xml</path>
+    <offsets>
+        <x-m>23.85</x-m>
+        <y-m>-19.2</y-m>
+        <z-m>9.69</z-m>
+    </offsets>
+    </model>
+    
+    <!--obstruction light on signpost-->
+    <model>
+    <path>Models/Effects/pos_lamp_red_light_2st.xml</path>
+    <offsets>
+        <x-m>-0.53</x-m>
+        <y-m>-66.16</y-m>
+        <z-m>30.58</z-m>
+    </offsets>
+    </model>
+
+    <!--windsock on roof-->
+    <model>
+    <path>Scenery/Models/Airport/windsock_lit.xml</path>
+    <offsets>
+        <x-m>30.63</x-m>
+        <y-m>-25.31</y-m>
+        <z-m>5.0</z-m>
+    </offsets>
+    </model>    
+
 
 </PropertyList>
