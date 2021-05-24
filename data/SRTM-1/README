@@ -1,0 +1,8 @@
+This folder needs to contain SRTM-1 elevation data, at least the tiles
+
+N48E016.hgt
+N47E016.hgt
+
+downloadable from:
+
+https://step.esa.int/auxdata/dem/SRTMGL1/
