@@ -23,13 +23,17 @@ See details in CONSENT_XPLANE_AUTHORS
 
 TODO
 
--high-res terrain
+-add missing buildings belonging to airport from OSM and texture them .. in progress
 
--add more apron objects and static aircraft from Flightgear object library
+-fix general airport layout and taxiways according to current sat imagery .. in progress
 
--add missing buildings of the surrounding from OSM and texture them
+-add more apron objects from Flightgear object library
 
--fix missing apron section in GA area
+-update land-use data in airport surrounding
+
+-fix missing apron section in GA area .. done
+
+-high-res STRM-1 terrain .. done
 
 FORUM
 
