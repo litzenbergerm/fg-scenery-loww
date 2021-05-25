@@ -1,1 +1,2 @@
-osm-roads osm_secondary 10
+MixedCrop default 0
+#Road-Tertiary osm-roads 5
