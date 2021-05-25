@@ -45,14 +45,14 @@ echo "====================="
 echo "compiling scenery"
 echo "====================="
 
-awk 'BEGIN { ORS=" " }; { print $1 }' ./materials.txt | xargs \
+# use all lines of material not starting with #
+
+awk 'BEGIN { ORS=" " }; { if ($1 !~ /["#"]/) print $1 }' ./materials.txt | xargs \
   $TG_PATH/tg-construct \
   --threads=8 --ignore-landmass --work-dir=./work \
   --output-dir=./output/Scenery/Terrain \
   --min-lon=16.00 --max-lon=17.99 --min-lat=47.00 --max-lat=48.99 \
   SRTM-1 AirportArea AirportObj $1
-
-#SRTM-1 AirportArea AirportObj Town Sand Rock
 
 date
 
