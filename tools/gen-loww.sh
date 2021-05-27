@@ -37,8 +37,8 @@ echo "====================="
 echo "landclass data processing.."
 echo "====================="
 
-awk 'system("rm -r ./work/"$1"/*")' ./materials.txt
-awk 'system("echo --"$1",w="$3" && $TG_PATH/ogr-decode --line-width "$3" --max-segment 10 --area-type "$1"  work/"$1" data/shapefiles/"$2)' ./materials.txt
+awk 'BEGIN { ORS=" " }; { if ($1 !~ /["#"]/) system("rm -r ./work/"$1"/*") }' ./materials.txt
+awk 'BEGIN { ORS=" " }; { if ($1 !~ /["#"]/) system("echo --"$1",w="$3" && $TG_PATH/ogr-decode --line-width "$3" --max-segment 10 --area-type "$1"  work/"$1" data/shapefiles/"$2) }' ./materials.txt
 #/home/martin/fgbuild/install/terragear/bin/ogr-decode --line-width 1 --max-segment 10 --area-type Road ./work/Road ./data/shapefiles/osm_secondary
 
 echo "====================="

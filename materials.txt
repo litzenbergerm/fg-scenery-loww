@@ -1,2 +1,10 @@
 MixedCrop default 0
 #Road-Tertiary osm-roads 5
+#Default default 0
+#MixedForrest ..
+#Default ..
+#Lake ..
+#Dump ..
+#Stream ..
+#OpenMining ..
+#NaturalCrop ..
