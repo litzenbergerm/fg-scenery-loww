@@ -1,9 +1,13 @@
 HerbTundra default 0
 Lake waterbodies 0
-MixedForest forest 0
+DeciduousForest forest 0
+Grassland urbangreen 0
 Town town 0
 Urban urban 0
-MixedCrop crop 0
+Transport transport 0
+CropGrass crop 0
+OpenMining mining 0
+Asphalt asphalt 0
 #Road-Tertiary osm-roads 5
 #Default default 0
 #MixedForrest ..
@@ -11,5 +15,4 @@ MixedCrop crop 0
 #Lake ..
 #Dump ..
 #Stream ..
-#OpenMining ..
 #NaturalCrop ..

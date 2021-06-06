@@ -4,7 +4,9 @@ export LD_LIBRARY_PATH='/home/martin/fgbuild/install/simgear/lib'"${LD_LIBRARY_P
 export TG_PATH=/home/martin/fgbuild/install/terragear/bin
 
 rm -r ./work/Shared/*
-  
+
+start=`date +%s`
+
 if [ $1 == "all" ]; then
 
   echo "====================="
@@ -30,7 +32,7 @@ fi
   rm -r ./work/AirportArea/*
   rm -r ./work/AirportObj/*
 
-  $TG_PATH/genapts850 --input=./data/airports/LOWW.apt.dat --work=./work --airport=LOWW --dem-path=./data/SRTM-1
+  $TG_PATH/genapts850 --input=./data/airports/LOWW.apt.dat --work=./work --dem-path=./data/SRTM-1
 
 
 echo "====================="
@@ -54,7 +56,8 @@ awk 'BEGIN { ORS=" " }; { if ($1 !~ /["#"]/) print $1 }' ./materials.txt | xargs
   --min-lon=16.00 --max-lon=17.99 --min-lat=47.00 --max-lat=48.99 \
   SRTM-1 AirportArea AirportObj $1
 
-date
+end=`date +%s`
+echo execution time `expr $end / 60 - $start / 60` min.
 
 echo "====================="
 echo "done."
