@@ -10,7 +10,7 @@ powoflight: X-Plane to Flightgear model conversion.
 
 Martin Litzenberger (litzi on forum): 3D models- and mesh-optimization. Additional buildings. Police helicopter base (Flugeinsatzstelle - FEST).
 
-Johann Stiegleithner: building textures
+Johann Stigleithner: building textures
 
 
 AUTHORS (X-Plane)
@@ -45,7 +45,7 @@ INSTALL
 
 Make sure to have write access to your flightgear root directory.
 
-Make a backup copy of 3220098.stg in Scenery/Objects/e010n40/e016n48, it will be overwritten!
+Make a backup copy of Scenery/Objects/e010n40/e016n48,../e016n47, ../e017n47 they will be overwritten!
 
 Copy the content of repo folder 'output' into your flightgear root directory.
 
