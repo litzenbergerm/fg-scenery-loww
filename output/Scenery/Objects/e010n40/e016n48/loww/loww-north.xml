@@ -940,7 +940,6 @@
      <red>1</red><green>1</green><blue>1</blue>
   </emission>
 </animation>
-
 <animation>
   <type>material</type>
   <object-name>PortalWest</object-name>

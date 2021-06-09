@@ -8,7 +8,9 @@ AUTHORS (Flightgear)
 
 powoflight: X-Plane to Flightgear model conversion.
 
-Martin Litzenberger (litzi on forum): 3D models- and mesh-optimization. Additional buildings. Police helicopter base (Flugeinsatzstelle - FEST). 
+Martin Litzenberger (litzi on forum): 3D models- and mesh-optimization. Additional buildings. Police helicopter base (Flugeinsatzstelle - FEST).
+
+Johann Stiegleithner: building textures
 
 
 AUTHORS (X-Plane)
@@ -29,7 +31,7 @@ TODO
 
 -add more apron objects from Flightgear object library
 
--update land-use data in airport surrounding
+-update land-use data in airport surrounding .. in progress
 
 -fix missing apron section in GA area .. done
 
