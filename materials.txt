@@ -7,7 +7,8 @@ Urban urban 0
 Transport transport 0
 CropGrass crop 0
 OpenMining mining 0
-#Asphalt asphalt 0
+Asphalt asphalt 0
+NaturalCrop vineyards 0
 #Road-Tertiary osm-roads 5
 #Default default 0
 #MixedForrest ..

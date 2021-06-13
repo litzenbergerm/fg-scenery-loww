@@ -21,7 +21,7 @@ if [ $1 == "all" ]; then
 
   $TG_PATH/gdalchop ./work/SRTM-1 ./data/SRTM-1/*.hgt
 
-  $TG_PATH/terrafit --minnodes 50 --maxnodes 10000 -e 10 --force ./work/SRTM-1
+  $TG_PATH/terrafit --minnodes 100 --maxnodes 10000 -e 5 --force ./work/SRTM-1
 
 fi
 
