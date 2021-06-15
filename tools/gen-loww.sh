@@ -53,7 +53,7 @@ awk 'BEGIN { ORS=" " }; { if ($1 !~ /["#"]/) print $1 }' ./materials.txt | xargs
   $TG_PATH/tg-construct \
   --threads=8 --ignore-landmass --work-dir=./work \
   --output-dir=./output/Scenery/Terrain \
-  --min-lon=16.00 --max-lon=17.99 --min-lat=47.00 --max-lat=48.99 \
+  --min-lon=16.500 --max-lon=17.000 --min-lat=48.000 --max-lat=48.250 \
   SRTM-1 AirportArea AirportObj $1
 
 end=`date +%s`
