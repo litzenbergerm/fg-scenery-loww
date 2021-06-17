@@ -7,6 +7,30 @@ rm -r ./work/Shared/*
 
 start=`date +%s`
 
+if [ $1 == "pack" ]; then
+
+  echo "====================="
+  echo "packing.."
+  echo "====================="
+
+  cd ./output/Scenery
+  # remove unwanted tiles *114, *115
+  rm ./Terrain/e010n40/e016n48/322011*
+  cp ../../* ./ 
+  
+  zip -o -r ~/Downloads/fgfs-loww-custom-scenery.zip ./* 
+
+  rm ./* 
+  cd ../../
+
+  echo "====================="
+  echo "done."
+  echo "====================="
+
+  exit 0
+
+fi
+
 if [ $1 == "all" ]; then
 
   echo "====================="
@@ -25,14 +49,14 @@ if [ $1 == "all" ]; then
 
 fi
 
-  echo "====================="
-  echo "airport data processing.."
-  echo "====================="
-  
-  rm -r ./work/AirportArea/*
-  rm -r ./work/AirportObj/*
+echo "====================="
+echo "airport data processing.."
+echo "====================="
 
-  $TG_PATH/genapts850 --input=./data/airports/LOWW.apt.dat --work=./work --dem-path=./data/SRTM-1
+rm -r ./work/AirportArea/*
+rm -r ./work/AirportObj/*
+
+$TG_PATH/genapts850 --input=./data/airports/LOWW.apt.dat --work=./work --dem-path=./data/SRTM-1
 
 
 echo "====================="

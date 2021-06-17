@@ -9,7 +9,7 @@ CropGrass crop 0
 OpenMining mining 0
 Asphalt asphalt 0
 NaturalCrop vineyards 0
-#Road-Tertiary osm-roads 5
+Road-Tertiary osm-roads 7
 #Default default 0
 #MixedForrest ..
 #Default ..
