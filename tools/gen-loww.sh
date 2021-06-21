@@ -14,8 +14,6 @@ if [ $1 == "pack" ]; then
   echo "====================="
 
   cd ./output/Scenery
-  # remove unwanted tiles *114, *115
-  rm ./Terrain/e010n40/e016n48/322011*
   cp ../../* ./ 
   
   zip -o -r ~/Downloads/fgfs-loww-custom-scenery.zip ./* 
@@ -80,6 +78,10 @@ awk 'BEGIN { ORS=" " }; { if ($1 !~ /["#"]/) print $1 }' ./materials.txt | xargs
   --min-lon=16.500 --max-lon=17.000 --min-lat=48.000 --max-lat=48.250 \
   SRTM-1 AirportArea AirportObj $1
 
+# remove unwanted tiles *114, *115
+rm ./output/Scenery/Terrain/e010n40/e016n48/322011*
+
+  
 end=`date +%s`
 echo execution time `expr $end / 60 - $start / 60` min.
 
