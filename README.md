@@ -25,19 +25,23 @@ See details in CONSENT_XPLANE_AUTHORS
 
 TODO
 
--add missing buildings belonging to airport from OSM and texture them .. in progress
+-add missing buildings belonging to core airport from OSM and texture them .. in progress
 
 -fix general airport layout and taxiways according to current sat imagery .. in progress
 
--update land-use data and roads in airport surrounding .. in progress
-
 -add rivers and streams
 
+-add industrial areas landclasses
+
 -add more apron objects from Flightgear object library
+
+-add extension jetways at pier north
 
 -fix missing apron section in GA area .. done
 
 -high-res STRM-1 terrain .. done
+
+-update land-use data and roads in airport surrounding .. done
 
 FORUM
 
