@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+ <path>jetway-4-5m-ext.ac</path>
+
+ <animation>
+  <type>range</type>
+  <min-m>0</min-m>
+  <max-m>5000</max-m>
+ </animation>
+ 
+ <animation>
+  <type>material</type> 
+  <object-name>jour</object-name>
+  <texture>jetway-raiffeisen.png</texture>
+ </animation>
+
+ <animation>
+  <type>textranslate</type> 
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <object-name>jour</object-name>
+  <bias>0.5</bias>
+  <axis>
+   <x>1</x>
+   <y>0</y>
+  </axis> 
+ </animation>
+ 
+</PropertyList>

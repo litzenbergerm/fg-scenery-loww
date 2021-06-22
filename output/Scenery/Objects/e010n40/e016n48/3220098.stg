@@ -64,18 +64,18 @@ OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55737202 48.12115945 171.9475 247.1 
 
 # jetways with uniqa logo, pier-nord, south side, from west to east
 
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56501026 48.11840676 175.8694 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56505724 48.11844277 175.8385 45.3 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56590292 48.11813127 176.3838 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56595515 48.11814651 176.2444 40.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56645096 48.11795179 176.5159 340.6 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56699314 48.11777709 176.7532 340.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56501026 48.11840676 176.5 0.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56505724 48.11844277 176.5 45.3 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56590292 48.11813127 178 340.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56595515 48.11814651 177 40.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56645096 48.11795179 177.5 340.6 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56699314 48.11777709 176.7532 340.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56704599 48.11778905 176.8000 12.6 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56753676 48.11759832 176.9901 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56808176 48.11742292 177.2400 341.1 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56753676 48.11759832 176.9901 340.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56808176 48.11742292 177.2400 341.1 0.0 -0.0
 OBJECT_STATIC loww/jetway-uniqa.xml 16.56812843 48.11743266 177.1987 24.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-uniqa.xml 16.56862351 48.11724328 177.4061 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56917285 48.11706906 177.4116 344.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56917285 48.11706906 177.4116 344.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-uniqa.xml 16.56922017 48.11707884 177.2997 8.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-uniqa.xml 16.56971265 48.11688910 177.8493 328.0 0.0 -0.0
 
