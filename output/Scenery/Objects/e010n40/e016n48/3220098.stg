@@ -38,57 +38,57 @@ OBJECT_STATIC loww/loww-south.xml 16.56134518954469 48.10443985905413 225.939869
 
 # jetways with raiffeisen logo, pier-ost
 
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56171699 48.11823452 175.8062 65.8 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56167899 48.11817792 176.0380 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56118016 48.11795753 175.9186 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56108449 48.11795345 175.9936 312.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56052126 48.11813548 176.1089 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56047995 48.11818808 175.5936 256.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56045808 48.11858885 175.2388 268.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56048767 48.11864295 175.1907 168.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56171699 48.11823452 176.5 65.8 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56167899 48.11817792 177 0.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56118016 48.11795753 176.5 0.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56108449 48.11795345 176.5 312.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56052126 48.11813548 177 0.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56047995 48.11818808 176 256.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56045808 48.11858885 176 268.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56048767 48.11864295 176 168.0 0.0 -0.0
 
 # jetways with raiffeisen logo, pier-west, from east to west
 
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55826489 48.11999385 173.3799 80.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55790908 48.11963567 173.8751 80.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55753787 48.11941542 173.9654 60.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55736513 48.11927585 174.2155 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55706587 48.11936687 173.9673 -30.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55645449 48.11966718 173.7847 344.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55636389 48.11974502 173.3869 296.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55639295 48.11999167 173.0932 276.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55654240 48.12024937 172.8143 240.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55691485 48.12050079 172.5725 255.9 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55715677 48.12081656 172.2701 242.1 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55737202 48.12115945 171.9475 247.1 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55826489 48.11999385 174 80.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55790908 48.11963567 175 80.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55753787 48.11941542 175 60.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55736513 48.11927585 175 0.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55706587 48.11936687 175 -30.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55645449 48.11966718 174 344.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55636389 48.11974502 174 296.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55639295 48.11999167 174 276.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55654240 48.12024937 174 240.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55691485 48.12050079 173 255.9 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55715677 48.12081656 173 242.1 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55737202 48.12115945 173 247.1 0.0 -0.0
 
 # jetways with uniqa logo, pier-nord, south side, from west to east
 
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56501026 48.11840676 176.5 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56505724 48.11844277 176.5 45.3 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56590292 48.11813127 178 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56595515 48.11814651 177 40.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56501026 48.11840676     176.5 -30.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56505724 48.11844277     176.5 15.3 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56590292 48.11813127 177 330.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56595515 48.11814651     177 10.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56645096 48.11795179 177.5 340.6 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56699314 48.11777709 176.7532 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56704599 48.11778905 176.8000 12.6 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56753676 48.11759832 176.9901 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56808176 48.11742292 177.2400 341.1 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56812843 48.11743266 177.1987 24.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56862351 48.11724328 177.4061 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56917285 48.11706906 177.4116 344.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56922017 48.11707884 177.2997 8.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56971265 48.11688910 177.8493 328.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56699314 48.11777709 178 340.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56704599 48.11778905     177.5 12.6 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56753676 48.11759832 178 340.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56808176 48.11742292 178 341.1 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56812843 48.11743266          178 24.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56862351 48.11724328          178 340.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56917285 48.11706906 178 344.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56922017 48.11707884          178 8.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56971265 48.11688910          178 328.0 0.0 -0.0
 
 # jetways with uniqa logo, pier-nord, north side, from east to west
 
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.57034967 48.11776296 176.8269 162.7 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56980693 48.11794177 176.6363 160.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56925764 48.11811673 176.4501 142.2 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56871416 48.11829556 176.3393 166.5 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56816847 48.11847166 176.0256 144.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56762498 48.11864824 175.6073 172.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56708341 48.11882688 175.5707 156.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56653932 48.11900366 175.1621 196.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.57034967 48.11776296 177 162.7 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56980693 48.11794177 177 160.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56925764 48.11811673 177 142.2 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56871416 48.11829556 177 166.5 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56816847 48.11847166      177 144.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56762498 48.11864824      176 172.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56708341 48.11882688      176 156.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56653932 48.11900366      176 196.0 0.0 -0.0
 
 #container racks north
 
