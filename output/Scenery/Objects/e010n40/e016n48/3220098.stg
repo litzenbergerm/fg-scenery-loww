@@ -39,18 +39,18 @@ OBJECT_STATIC loww/loww-south.xml 16.56134518954469 48.10443985905413 225.939869
 # jetways with raiffeisen logo, pier-ost
 
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56171699 48.11823452 176.5 65.8 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56167899 48.11817792 177 0.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56167899 48.11817792 176.5 0.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56118016 48.11795753 176.5 0.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56108449 48.11795345 176.5 312.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56052126 48.11813548 177 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56047995 48.11818808 176 256.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56052126 48.11813548 176.5 0.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56047995 48.11818808 176.5 256.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56045808 48.11858885 176 268.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56048767 48.11864295 176 168.0 0.0 -0.0
 
 # jetways with raiffeisen logo, pier-west, from east to west
 
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55826489 48.11999385 174 80.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55790908 48.11963567 175 80.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55790908 48.11963567 174.5 80.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55753787 48.11941542 175 60.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55736513 48.11927585 175 0.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55706587 48.11936687 175 -30.0 0.0 -0.0
@@ -95,6 +95,9 @@ OBJECT_STATIC loww/jetway-uniqa.xml 16.56653932 48.11900366      176 196.0 0.0 -
 OBJECT_STATIC loww/container-rack.ac 16.56628082 48.11997727 174.1352 244.0 0.0 -0.0
 OBJECT_STATIC loww/container-rack.ac 16.56653731 48.12021388 174.1432 245.4 0.0 -0.0
 OBJECT_STATIC loww/container-rack.ac 16.56726067 48.12126366 172.8868 243.4 0.0 -0.0
+
+# fences
+
 
 # 'clutter' on apron
 
