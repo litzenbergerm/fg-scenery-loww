@@ -1,0 +1,1866 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <flightplan>
+    <info n="1">
+      <Lat type="double">48.12632758</Lat>
+      <Lon type="double">16.56618606</Lon>
+      <Alt type="double">167.8238552</Alt>
+      <Tile type="string">e010n40/e016n48/3220106.stg</Tile>
+      <Lenght type="string">10</Lenght>
+      <Width type="string">0</Width>
+    </info>
+    <pole n="1000">
+      <name type="string">#1-0</name>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">167.8238552</alt>
+      <course type="double">2.403432976</course>
+    </pole>
+    <pole n="1001">
+      <name type="string">#1-1</name>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">167.8811674</alt>
+      <course type="double">2.403432976</course>
+    </pole>
+    <pole n="1002">
+      <name type="string">#1-2</name>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">167.936187</alt>
+      <course type="double">2.403432976</course>
+    </pole>
+    <pole n="1003">
+      <name type="string">#1-3</name>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">167.9921995</alt>
+      <course type="double">2.403432976</course>
+    </pole>
+    <pole n="1004">
+      <name type="string">#1-4</name>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">168.0482247</alt>
+      <course type="double">2.403432976</course>
+    </pole>
+    <pole n="1005">
+      <name type="string">#1-5</name>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">168.1062186</alt>
+      <course type="double">2.403432976</course>
+    </pole>
+    <pole n="1006">
+      <name type="string">#1-6</name>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">168.162274</alt>
+      <course type="double">2.403432976</course>
+    </pole>
+    <pole n="1007">
+      <name type="string">#1-7</name>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">168.221273</alt>
+      <course type="double">2.403432976</course>
+    </pole>
+    <fence n="1000">
+      <name type="string">#1-0</name>
+      <lenght type="double">9.636696584</lenght>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">167.8512208</alt>
+      <course type="double">2.403432976</course>
+    </fence>
+    <fence n="1001">
+      <name type="string">#1-1</name>
+      <lenght type="double">9.636696584</lenght>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">167.9081871</alt>
+      <course type="double">2.403432976</course>
+    </fence>
+    <fence n="1002">
+      <name type="string">#1-2</name>
+      <lenght type="double">9.636696584</lenght>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">167.9651674</alt>
+      <course type="double">2.403432976</course>
+    </fence>
+    <fence n="1003">
+      <name type="string">#1-3</name>
+      <lenght type="double">9.636696584</lenght>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">168.0192337</alt>
+      <course type="double">2.403432976</course>
+    </fence>
+    <fence n="1004">
+      <name type="string">#1-4</name>
+      <lenght type="double">9.636696584</lenght>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">168.0752668</alt>
+      <course type="double">2.403432976</course>
+    </fence>
+    <fence n="1005">
+      <name type="string">#1-5</name>
+      <lenght type="double">9.636696584</lenght>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">168.1322908</alt>
+      <course type="double">2.403432976</course>
+    </fence>
+    <fence n="1006">
+      <name type="string">#1-6</name>
+      <lenght type="double">9.636696584</lenght>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">168.1922601</alt>
+      <course type="double">2.403432976</course>
+    </fence>
+    <fence n="1007">
+      <name type="string">#1-7</name>
+      <lenght type="double">9.636696584</lenght>
+      <dx type="double">6.484800549</dx>
+      <dy type="double">-7.128343628</dy>
+      <alt type="double">168.2532197</alt>
+      <course type="double">2.403432976</course>
+    </fence>
+    <pole n="2000">
+      <name type="string">#2-0</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.2833183</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2001">
+      <name type="string">#2-1</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.3431621</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2002">
+      <name type="string">#2-2</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.4001946</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2003">
+      <name type="string">#2-3</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.4611468</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2004">
+      <name type="string">#2-4</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.5230905</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2005">
+      <name type="string">#2-5</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.5821192</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2006">
+      <name type="string">#2-6</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.6440926</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2007">
+      <name type="string">#2-7</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.7041274</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2008">
+      <name type="string">#2-8</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.7680835</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2009">
+      <name type="string">#2-9</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.831078</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2010">
+      <name type="string">#2-10</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.8940877</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2011">
+      <name type="string">#2-11</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.9561349</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2012">
+      <name type="string">#2-12</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">169.0191731</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2013">
+      <name type="string">#2-13</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">169.0832033</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <pole n="2014">
+      <name type="string">#2-14</name>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">169.1452951</alt>
+      <course type="double">2.384577657</course>
+    </pole>
+    <fence n="2000">
+      <name type="string">#2-0</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.3112343</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2001">
+      <name type="string">#2-1</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.3721648</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2002">
+      <name type="string">#2-2</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.4311569</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2003">
+      <name type="string">#2-3</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.4930933</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2004">
+      <name type="string">#2-4</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.5530911</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2005">
+      <name type="string">#2-5</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.6131046</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2006">
+      <name type="string">#2-6</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.6711786</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2007">
+      <name type="string">#2-7</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.7361037</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2008">
+      <name type="string">#2-8</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.7990906</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2009">
+      <name type="string">#2-9</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.8630689</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2010">
+      <name type="string">#2-10</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.9251093</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2011">
+      <name type="string">#2-11</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">168.9881401</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2012">
+      <name type="string">#2-12</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">169.0511866</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2013">
+      <name type="string">#2-13</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">169.1152239</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <fence n="2014">
+      <name type="string">#2-14</name>
+      <lenght type="double">9.719878362</lenght>
+      <dx type="double">6.675172546</dx>
+      <dy type="double">-7.065274719</dy>
+      <alt type="double">169.1773237</alt>
+      <course type="double">2.384577657</course>
+    </fence>
+    <pole n="3000">
+      <name type="string">#3-0</name>
+      <dx type="double">7.680631217</dx>
+      <dy type="double">-1.698921251</dy>
+      <alt type="double">169.2094429</alt>
+      <course type="double">1.788486678</course>
+    </pole>
+    <fence n="3000">
+      <name type="string">#3-0</name>
+      <lenght type="double">7.866284339</lenght>
+      <dx type="double">7.680631217</dx>
+      <dy type="double">-1.698921251</dy>
+      <alt type="double">169.2156572</alt>
+      <course type="double">1.788486678</course>
+    </fence>
+    <pole n="4000">
+      <name type="string">#4-0</name>
+      <dx type="double">5.374304193</dx>
+      <dy type="double">1.647315524</dy>
+      <alt type="double">169.2267728</alt>
+      <course type="double">1.273371422</course>
+    </pole>
+    <fence n="4000">
+      <name type="string">#4-0</name>
+      <lenght type="double">5.621102561</lenght>
+      <dx type="double">5.374304193</dx>
+      <dy type="double">1.647315524</dy>
+      <alt type="double">169.2220555</alt>
+      <course type="double">1.273371422</course>
+    </fence>
+    <pole n="5000">
+      <name type="string">#5-0</name>
+      <dx type="double">4.656741753</dx>
+      <dy type="double">2.756562884</dy>
+      <alt type="double">169.2145654</alt>
+      <course type="double">1.036316239</course>
+    </pole>
+    <fence n="5000">
+      <name type="string">#5-0</name>
+      <lenght type="double">5.411458462</lenght>
+      <dx type="double">4.656741753</dx>
+      <dy type="double">2.756562884</dy>
+      <alt type="double">169.2035552</alt>
+      <course type="double">1.036316239</course>
+    </fence>
+    <pole n="6000">
+      <name type="string">#6-0</name>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">169.1921345</alt>
+      <course type="double">0.4928753023</course>
+    </pole>
+    <pole n="6001">
+      <name type="string">#6-1</name>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">169.1199243</alt>
+      <course type="double">0.4928753023</course>
+    </pole>
+    <pole n="6002">
+      <name type="string">#6-2</name>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">169.0451367</alt>
+      <course type="double">0.4928753023</course>
+    </pole>
+    <pole n="6003">
+      <name type="string">#6-3</name>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.9723173</alt>
+      <course type="double">0.4928753023</course>
+    </pole>
+    <pole n="6004">
+      <name type="string">#6-4</name>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.9004894</alt>
+      <course type="double">0.4928753023</course>
+    </pole>
+    <pole n="6005">
+      <name type="string">#6-5</name>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.8267224</alt>
+      <course type="double">0.4928753023</course>
+    </pole>
+    <pole n="6006">
+      <name type="string">#6-6</name>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.7529704</alt>
+      <course type="double">0.4928753023</course>
+    </pole>
+    <pole n="6007">
+      <name type="string">#6-7</name>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.6811865</alt>
+      <course type="double">0.4928753023</course>
+    </pole>
+    <fence n="6000">
+      <name type="string">#6-0</name>
+      <lenght type="double">9.672684222</lenght>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">169.1558585</alt>
+      <course type="double">0.4928753023</course>
+    </fence>
+    <fence n="6001">
+      <name type="string">#6-1</name>
+      <lenght type="double">9.672684222</lenght>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">169.0820405</alt>
+      <course type="double">0.4928753023</course>
+    </fence>
+    <fence n="6002">
+      <name type="string">#6-2</name>
+      <lenght type="double">9.672684222</lenght>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">169.0092137</alt>
+      <course type="double">0.4928753023</course>
+    </fence>
+    <fence n="6003">
+      <name type="string">#6-3</name>
+      <lenght type="double">9.672684222</lenght>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.9364016</alt>
+      <course type="double">0.4928753023</course>
+    </fence>
+    <fence n="6004">
+      <name type="string">#6-4</name>
+      <lenght type="double">9.672684222</lenght>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.8636036</alt>
+      <course type="double">0.4928753023</course>
+    </fence>
+    <fence n="6005">
+      <name type="string">#6-5</name>
+      <lenght type="double">9.672684222</lenght>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.7908208</alt>
+      <course type="double">0.4928753023</course>
+    </fence>
+    <fence n="6006">
+      <name type="string">#6-6</name>
+      <lenght type="double">9.672684222</lenght>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.7131703</alt>
+      <course type="double">0.4928753023</course>
+    </fence>
+    <fence n="6007">
+      <name type="string">#6-7</name>
+      <lenght type="double">9.672684222</lenght>
+      <dx type="double">4.576736097</dx>
+      <dy type="double">8.521402864</dy>
+      <alt type="double">168.6452997</alt>
+      <course type="double">0.4928753023</course>
+    </fence>
+    <pole n="7000">
+      <name type="string">#7-0</name>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.6082092</alt>
+      <course type="double">1.982100518</course>
+    </pole>
+    <pole n="7001">
+      <name type="string">#7-1</name>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.6416834</alt>
+      <course type="double">1.982100518</course>
+    </pole>
+    <pole n="7002">
+      <name type="string">#7-2</name>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.6749399</alt>
+      <course type="double">1.982100518</course>
+    </pole>
+    <pole n="7003">
+      <name type="string">#7-3</name>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.7082107</alt>
+      <course type="double">1.982100518</course>
+    </pole>
+    <pole n="7004">
+      <name type="string">#7-4</name>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.7414945</alt>
+      <course type="double">1.982100518</course>
+    </pole>
+    <fence n="7000">
+      <name type="string">#7-0</name>
+      <lenght type="double">9.378016198</lenght>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.6240838</alt>
+      <course type="double">1.982100518</course>
+    </fence>
+    <fence n="7001">
+      <name type="string">#7-1</name>
+      <lenght type="double">9.378016198</lenght>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.6583099</alt>
+      <course type="double">1.982100518</course>
+    </fence>
+    <fence n="7002">
+      <name type="string">#7-2</name>
+      <lenght type="double">9.378016198</lenght>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.690597</alt>
+      <course type="double">1.982100518</course>
+    </fence>
+    <fence n="7003">
+      <name type="string">#7-3</name>
+      <lenght type="double">9.378016198</lenght>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.7238739</alt>
+      <course type="double">1.982100518</course>
+    </fence>
+    <fence n="7004">
+      <name type="string">#7-4</name>
+      <lenght type="double">9.378016198</lenght>
+      <dx type="double">8.595891338</dx>
+      <dy type="double">-3.749378604</dy>
+      <alt type="double">168.7581413</alt>
+      <course type="double">1.982100518</course>
+    </fence>
+    <pole n="8000">
+      <name type="string">#8-0</name>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">168.7752268</alt>
+      <course type="double">3.583440928</course>
+    </pole>
+    <pole n="8001">
+      <name type="string">#8-1</name>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">168.8526531</alt>
+      <course type="double">3.583440928</course>
+    </pole>
+    <pole n="8002">
+      <name type="string">#8-2</name>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">168.931507</alt>
+      <course type="double">3.583440928</course>
+    </pole>
+    <pole n="8003">
+      <name type="string">#8-3</name>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.0103753</alt>
+      <course type="double">3.583440928</course>
+    </pole>
+    <pole n="8004">
+      <name type="string">#8-4</name>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.0902364</alt>
+      <course type="double">3.583440928</course>
+    </pole>
+    <pole n="8005">
+      <name type="string">#8-5</name>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.1691364</alt>
+      <course type="double">3.583440928</course>
+    </pole>
+    <pole n="8006">
+      <name type="string">#8-6</name>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.248052</alt>
+      <course type="double">3.583440928</course>
+    </pole>
+    <pole n="8007">
+      <name type="string">#8-7</name>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.3269829</alt>
+      <course type="double">3.583440928</course>
+    </pole>
+    <pole n="8008">
+      <name type="string">#8-8</name>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.4069063</alt>
+      <course type="double">3.583440928</course>
+    </pole>
+    <fence n="8000">
+      <name type="string">#8-0</name>
+      <lenght type="double">9.965172054</lenght>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">168.8132331</alt>
+      <course type="double">3.583440928</course>
+    </fence>
+    <fence n="8001">
+      <name type="string">#8-1</name>
+      <lenght type="double">9.965172054</lenght>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">168.8930547</alt>
+      <course type="double">3.583440928</course>
+    </fence>
+    <fence n="8002">
+      <name type="string">#8-2</name>
+      <lenght type="double">9.965172054</lenght>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">168.9719155</alt>
+      <course type="double">3.583440928</course>
+    </fence>
+    <fence n="8003">
+      <name type="string">#8-3</name>
+      <lenght type="double">9.965172054</lenght>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.0498156</alt>
+      <course type="double">3.583440928</course>
+    </fence>
+    <fence n="8004">
+      <name type="string">#8-4</name>
+      <lenght type="double">9.965172054</lenght>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.1296844</alt>
+      <course type="double">3.583440928</course>
+    </fence>
+    <fence n="8005">
+      <name type="string">#8-5</name>
+      <lenght type="double">9.965172054</lenght>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.208592</alt>
+      <course type="double">3.583440928</course>
+    </fence>
+    <fence n="8006">
+      <name type="string">#8-6</name>
+      <lenght type="double">9.965172054</lenght>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.2884919</alt>
+      <course type="double">3.583440928</course>
+    </fence>
+    <fence n="8007">
+      <name type="string">#8-7</name>
+      <lenght type="double">9.965172054</lenght>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.3674309</alt>
+      <course type="double">3.583440928</course>
+    </fence>
+    <fence n="8008">
+      <name type="string">#8-8</name>
+      <lenght type="double">9.965172054</lenght>
+      <dx type="double">-4.261216849</dx>
+      <dy type="double">-9.008145482</dy>
+      <alt type="double">169.4454089</alt>
+      <course type="double">3.583440928</course>
+    </fence>
+    <pole n="10000">
+      <name type="string">#10-0</name>
+      <dx type="double">7.357126866</dx>
+      <dy type="double">-5.028779087</dy>
+      <alt type="double">169.5138472</alt>
+      <course type="double">2.170379359</course>
+    </pole>
+    <fence n="10000">
+      <name type="string">#10-0</name>
+      <lenght type="double">8.911561862</lenght>
+      <dx type="double">7.357126866</dx>
+      <dy type="double">-5.028779087</dy>
+      <alt type="double">169.5390208</alt>
+      <course type="double">2.170379359</course>
+    </fence>
+    <pole n="11000">
+      <name type="string">#11-0</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.5613957</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11001">
+      <name type="string">#11-1</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.6015113</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11002">
+      <name type="string">#11-2</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.646673</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11003">
+      <name type="string">#11-3</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.6879453</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11004">
+      <name type="string">#11-4</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.7292328</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11005">
+      <name type="string">#11-5</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.7685836</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11006">
+      <name type="string">#11-6</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.8099025</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11007">
+      <name type="string">#11-7</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.8502614</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11008">
+      <name type="string">#11-8</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.8916124</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11009">
+      <name type="string">#11-9</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.9329795</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <pole n="11010">
+      <name type="string">#11-10</name>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.9733854</alt>
+      <course type="double">2.006923449</course>
+    </pole>
+    <fence n="11000">
+      <name type="string">#11-0</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.5804003</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11001">
+      <name type="string">#11-1</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.6216492</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11002">
+      <name type="string">#11-2</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.6668193</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11003">
+      <name type="string">#11-3</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.7090757</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11004">
+      <name type="string">#11-4</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.7503712</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11005">
+      <name type="string">#11-5</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.7897299</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11006">
+      <name type="string">#11-6</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.8300804</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11007">
+      <name type="string">#11-7</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.8714237</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11008">
+      <name type="string">#11-8</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.9118059</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11009">
+      <name type="string">#11-9</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.9522044</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <fence n="11010">
+      <name type="string">#11-10</name>
+      <lenght type="double">10.05096234</lenght>
+      <dx type="double">9.110136841</dx>
+      <dy type="double">-4.245851006</dy>
+      <alt type="double">169.9935946</alt>
+      <course type="double">2.006923449</course>
+    </fence>
+    <pole n="12000">
+      <name type="string">#12-0</name>
+      <dx type="double">4.834138184</dx>
+      <dy type="double">7.485677751</dy>
+      <alt type="double">170.0155568</alt>
+      <course type="double">0.5734063972</course>
+    </pole>
+    <pole n="12001">
+      <name type="string">#12-1</name>
+      <dx type="double">4.834138184</dx>
+      <dy type="double">7.485677751</dy>
+      <alt type="double">169.9445545</alt>
+      <course type="double">0.5734063972</course>
+    </pole>
+    <pole n="12002">
+      <name type="string">#12-2</name>
+      <dx type="double">4.834138184</dx>
+      <dy type="double">7.485677751</dy>
+      <alt type="double">169.8762904</alt>
+      <course type="double">0.5734063972</course>
+    </pole>
+    <pole n="12003">
+      <name type="string">#12-3</name>
+      <dx type="double">4.834138184</dx>
+      <dy type="double">7.485677751</dy>
+      <alt type="double">169.8080387</alt>
+      <course type="double">0.5734063972</course>
+    </pole>
+    <fence n="12000">
+      <name type="string">#12-0</name>
+      <lenght type="double">8.91090699</lenght>
+      <dx type="double">4.834138184</dx>
+      <dy type="double">7.485677751</dy>
+      <alt type="double">169.9791792</alt>
+      <course type="double">0.5734063972</course>
+    </fence>
+    <fence n="12001">
+      <name type="string">#12-1</name>
+      <lenght type="double">8.91090699</lenght>
+      <dx type="double">4.834138184</dx>
+      <dy type="double">7.485677751</dy>
+      <alt type="double">169.9148153</alt>
+      <course type="double">0.5734063972</course>
+    </fence>
+    <fence n="12002">
+      <name type="string">#12-2</name>
+      <lenght type="double">8.91090699</lenght>
+      <dx type="double">4.834138184</dx>
+      <dy type="double">7.485677751</dy>
+      <alt type="double">169.8436277</alt>
+      <course type="double">0.5734063972</course>
+    </fence>
+    <fence n="12003">
+      <name type="string">#12-3</name>
+      <lenght type="double">8.91090699</lenght>
+      <dx type="double">4.834138184</dx>
+      <dy type="double">7.485677751</dy>
+      <alt type="double">169.7734293</alt>
+      <course type="double">0.5734063972</course>
+    </fence>
+    <pole n="13000">
+      <name type="string">#13-0</name>
+      <dx type="double">5.681772593</dx>
+      <dy type="double">8.152041027</dy>
+      <alt type="double">169.7399647</alt>
+      <course type="double">0.6086931901</course>
+    </pole>
+    <pole n="13001">
+      <name type="string">#13-1</name>
+      <dx type="double">5.681772593</dx>
+      <dy type="double">8.152041027</dy>
+      <alt type="double">169.6649193</alt>
+      <course type="double">0.6086931901</course>
+    </pole>
+    <pole n="13002">
+      <name type="string">#13-2</name>
+      <dx type="double">5.681772593</dx>
+      <dy type="double">8.152041027</dy>
+      <alt type="double">169.5890776</alt>
+      <course type="double">0.6086931901</course>
+    </pole>
+    <pole n="13003">
+      <name type="string">#13-3</name>
+      <dx type="double">5.681772593</dx>
+      <dy type="double">8.152041027</dy>
+      <alt type="double">169.5122752</alt>
+      <course type="double">0.6086931901</course>
+    </pole>
+    <fence n="13000">
+      <name type="string">#13-0</name>
+      <lenght type="double">9.936715388</lenght>
+      <dx type="double">5.681772593</dx>
+      <dy type="double">8.152041027</dy>
+      <alt type="double">169.7023574</alt>
+      <course type="double">0.6086931901</course>
+    </fence>
+    <fence n="13001">
+      <name type="string">#13-1</name>
+      <lenght type="double">9.936715388</lenght>
+      <dx type="double">5.681772593</dx>
+      <dy type="double">8.152041027</dy>
+      <alt type="double">169.6255317</alt>
+      <course type="double">0.6086931901</course>
+    </fence>
+    <fence n="13002">
+      <name type="string">#13-2</name>
+      <lenght type="double">9.936715388</lenght>
+      <dx type="double">5.681772593</dx>
+      <dy type="double">8.152041027</dy>
+      <alt type="double">169.5506743</alt>
+      <course type="double">0.6086931901</course>
+    </fence>
+    <fence n="13003">
+      <name type="string">#13-3</name>
+      <lenght type="double">9.936715388</lenght>
+      <dx type="double">5.681772593</dx>
+      <dy type="double">8.152041027</dy>
+      <alt type="double">169.4758328</alt>
+      <course type="double">0.6086931901</course>
+    </fence>
+    <pole n="14000">
+      <name type="string">#14-0</name>
+      <dx type="double">7.316478668</dx>
+      <dy type="double">7.790269766</dy>
+      <alt type="double">169.4392088</alt>
+      <course type="double">0.7540455631</course>
+    </pole>
+    <pole n="14001">
+      <name type="string">#14-1</name>
+      <dx type="double">7.316478668</dx>
+      <dy type="double">7.790269766</dy>
+      <alt type="double">169.3670588</alt>
+      <course type="double">0.7540455631</course>
+    </pole>
+    <pole n="14002">
+      <name type="string">#14-2</name>
+      <dx type="double">7.316478668</dx>
+      <dy type="double">7.790269766</dy>
+      <alt type="double">169.2966938</alt>
+      <course type="double">0.7540455631</course>
+    </pole>
+    <pole n="14003">
+      <name type="string">#14-3</name>
+      <dx type="double">7.316478668</dx>
+      <dy type="double">7.790269766</dy>
+      <alt type="double">169.2243937</alt>
+      <course type="double">0.7540455631</course>
+    </pole>
+    <fence n="14000">
+      <name type="string">#14-0</name>
+      <lenght type="double">10.68733658</lenght>
+      <dx type="double">7.316478668</dx>
+      <dy type="double">7.790269766</dy>
+      <alt type="double">169.4032242</alt>
+      <course type="double">0.7540455631</course>
+    </fence>
+    <fence n="14001">
+      <name type="string">#14-1</name>
+      <lenght type="double">10.68733658</lenght>
+      <dx type="double">7.316478668</dx>
+      <dy type="double">7.790269766</dy>
+      <alt type="double">169.333827</alt>
+      <course type="double">0.7540455631</course>
+    </fence>
+    <fence n="14002">
+      <name type="string">#14-2</name>
+      <lenght type="double">10.68733658</lenght>
+      <dx type="double">7.316478668</dx>
+      <dy type="double">7.790269766</dy>
+      <alt type="double">169.2605412</alt>
+      <course type="double">0.7540455631</course>
+    </fence>
+    <fence n="14003">
+      <name type="string">#14-3</name>
+      <lenght type="double">10.68733658</lenght>
+      <dx type="double">7.316478668</dx>
+      <dy type="double">7.790269766</dy>
+      <alt type="double">169.1892272</alt>
+      <course type="double">0.7540455631</course>
+    </fence>
+    <pole n="15000">
+      <name type="string">#15-0</name>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">169.1524779</alt>
+      <course type="double">0.8403269693</course>
+    </pole>
+    <pole n="15001">
+      <name type="string">#15-1</name>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">169.0874385</alt>
+      <course type="double">0.8403269693</course>
+    </pole>
+    <pole n="15002">
+      <name type="string">#15-2</name>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">169.0257123</alt>
+      <course type="double">0.8403269693</course>
+    </pole>
+    <pole n="15003">
+      <name type="string">#15-3</name>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">168.961074</alt>
+      <course type="double">0.8403269693</course>
+    </pole>
+    <pole n="15004">
+      <name type="string">#15-4</name>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">168.8944989</alt>
+      <course type="double">0.8403269693</course>
+    </pole>
+    <fence n="15000">
+      <name type="string">#15-0</name>
+      <lenght type="double">10.39612353</lenght>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">169.1202614</alt>
+      <course type="double">0.8403269693</course>
+    </fence>
+    <fence n="15001">
+      <name type="string">#15-1</name>
+      <lenght type="double">10.39612353</lenght>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">169.0555971</alt>
+      <course type="double">0.8403269693</course>
+    </fence>
+    <fence n="15002">
+      <name type="string">#15-2</name>
+      <lenght type="double">10.39612353</lenght>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">168.9929028</alt>
+      <course type="double">0.8403269693</course>
+    </fence>
+    <fence n="15003">
+      <name type="string">#15-3</name>
+      <lenght type="double">10.39612353</lenght>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">168.9272958</alt>
+      <course type="double">0.8403269693</course>
+    </fence>
+    <fence n="15004">
+      <name type="string">#15-4</name>
+      <lenght type="double">10.39612353</lenght>
+      <dx type="double">7.743670298</dx>
+      <dy type="double">6.936494421</dy>
+      <alt type="double">168.8626823</alt>
+      <course type="double">0.8403269693</course>
+    </fence>
+    <pole n="16000">
+      <name type="string">#16-0</name>
+      <dx type="double">8.246428864</dx>
+      <dy type="double">3.08236306</dy>
+      <alt type="double">168.8305587</alt>
+      <course type="double">1.213094304</course>
+    </pole>
+    <pole n="16001">
+      <name type="string">#16-1</name>
+      <dx type="double">8.246428864</dx>
+      <dy type="double">3.08236306</dy>
+      <alt type="double">168.7998417</alt>
+      <course type="double">1.213094304</course>
+    </pole>
+    <fence n="16000">
+      <name type="string">#16-0</name>
+      <lenght type="double">8.803666909</lenght>
+      <dx type="double">8.246428864</dx>
+      <dy type="double">3.08236306</dy>
+      <alt type="double">168.8153545</alt>
+      <course type="double">1.213094304</course>
+    </fence>
+    <fence n="16001">
+      <name type="string">#16-1</name>
+      <lenght type="double">8.803666909</lenght>
+      <dx type="double">8.246428864</dx>
+      <dy type="double">3.08236306</dy>
+      <alt type="double">168.7853091</alt>
+      <course type="double">1.213094304</course>
+    </fence>
+    <pole n="17000">
+      <name type="string">#17-0</name>
+      <dx type="double">8.928966763</dx>
+      <dy type="double">-2.814156735</dy>
+      <alt type="double">168.7706182</alt>
+      <course type="double">1.876113253</course>
+    </pole>
+    <pole n="17001">
+      <name type="string">#17-1</name>
+      <dx type="double">8.928966763</dx>
+      <dy type="double">-2.814156735</dy>
+      <alt type="double">168.7934555</alt>
+      <course type="double">1.876113253</course>
+    </pole>
+    <fence n="17000">
+      <name type="string">#17-0</name>
+      <lenght type="double">9.361940268</lenght>
+      <dx type="double">8.928966763</dx>
+      <dy type="double">-2.814156735</dy>
+      <alt type="double">168.7801624</alt>
+      <course type="double">1.876113253</course>
+    </fence>
+    <fence n="17001">
+      <name type="string">#17-1</name>
+      <lenght type="double">9.361940268</lenght>
+      <dx type="double">8.928966763</dx>
+      <dy type="double">-2.814156735</dy>
+      <alt type="double">168.8047988</alt>
+      <course type="double">1.876113253</course>
+    </fence>
+    <pole n="18000">
+      <name type="string">#18-0</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">168.8179761</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18001">
+      <name type="string">#18-1</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">168.9128016</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18002">
+      <name type="string">#18-2</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">168.9938484</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18003">
+      <name type="string">#18-3</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.0719815</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18004">
+      <name type="string">#18-4</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.1491546</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18005">
+      <name type="string">#18-5</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.2292739</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18006">
+      <name type="string">#18-6</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.3201511</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18007">
+      <name type="string">#18-7</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.4061623</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18008">
+      <name type="string">#18-8</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.4951188</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18009">
+      <name type="string">#18-9</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.5821386</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18010">
+      <name type="string">#18-10</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.6672219</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18011">
+      <name type="string">#18-11</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.7503676</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18012">
+      <name type="string">#18-12</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.8432952</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18013">
+      <name type="string">#18-13</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.9264736</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18014">
+      <name type="string">#18-14</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.007715</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18015">
+      <name type="string">#18-15</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.0948326</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18016">
+      <name type="string">#18-16</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.1722001</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18017">
+      <name type="string">#18-17</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.2700923</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <pole n="18018">
+      <name type="string">#18-18</name>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.3230782</alt>
+      <course type="double">2.71300112</course>
+    </pole>
+    <fence n="18000">
+      <name type="string">#18-0</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">168.8576356</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18001">
+      <name type="string">#18-1</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">168.9474639</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18002">
+      <name type="string">#18-2</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.0236359</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18003">
+      <name type="string">#18-3</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.1154492</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18004">
+      <name type="string">#18-4</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.1926302</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18005">
+      <name type="string">#18-5</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.2698275</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18006">
+      <name type="string">#18-6</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.3695022</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18007">
+      <name type="string">#18-7</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.4564976</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18008">
+      <name type="string">#18-8</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.5337442</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18009">
+      <name type="string">#18-9</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.6276079</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18010">
+      <name type="string">#18-10</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.7097696</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18011">
+      <name type="string">#18-11</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.7958526</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18012">
+      <name type="string">#18-12</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.889765</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18013">
+      <name type="string">#18-13</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">169.9602566</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18014">
+      <name type="string">#18-14</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.0512717</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18015">
+      <name type="string">#18-15</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.1471864</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18016">
+      <name type="string">#18-16</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.2226089</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18017">
+      <name type="string">#18-17</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.3097665</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <fence n="18018">
+      <name type="string">#18-18</name>
+      <lenght type="double">10.17134437</lenght>
+      <dx type="double">4.227110446</dx>
+      <dy type="double">-9.251366574</dy>
+      <alt type="double">170.3861986</alt>
+      <course type="double">2.71300112</course>
+    </fence>
+    <pole n="19000">
+      <name type="string">#19-0</name>
+      <dx type="double">0.624559869</dx>
+      <dy type="double">-7.445232884</dy>
+      <alt type="double">170.4492167</alt>
+      <course type="double">3.057901383</course>
+    </pole>
+    <fence n="19000">
+      <name type="string">#19-0</name>
+      <lenght type="double">7.471383254</lenght>
+      <dx type="double">0.624559869</dx>
+      <dy type="double">-7.445232884</dy>
+      <alt type="double">170.4939887</alt>
+      <course type="double">3.057901383</course>
+    </fence>
+    <pole n="20000">
+      <name type="string">#20-0</name>
+      <dx type="double">-4.388802347</dx>
+      <dy type="double">-8.767617299</dy>
+      <alt type="double">170.521123</alt>
+      <course type="double">3.605695808</course>
+    </pole>
+    <fence n="20000">
+      <name type="string">#20-0</name>
+      <lenght type="double">9.804728407</lenght>
+      <dx type="double">-4.388802347</dx>
+      <dy type="double">-8.767617299</dy>
+      <alt type="double">170.5655812</alt>
+      <course type="double">3.605695808</course>
+    </fence>
+    <pole n="21000">
+      <name type="string">#21-0</name>
+      <dx type="double">9.316301511</dx>
+      <dy type="double">-6.853958661</dy>
+      <alt type="double">170.6074442</alt>
+      <course type="double">2.205079353</course>
+    </pole>
+    <pole n="21001">
+      <name type="string">#21-1</name>
+      <dx type="double">9.316301511</dx>
+      <dy type="double">-6.853958661</dy>
+      <alt type="double">170.6723972</alt>
+      <course type="double">2.205079353</course>
+    </pole>
+    <fence n="21000">
+      <name type="string">#21-0</name>
+      <lenght type="double">11.5659078</lenght>
+      <dx type="double">9.316301511</dx>
+      <dy type="double">-6.853958661</dy>
+      <alt type="double">170.6407508</alt>
+      <course type="double">2.205079353</course>
+    </fence>
+    <fence n="21001">
+      <name type="string">#21-1</name>
+      <lenght type="double">11.5659078</lenght>
+      <dx type="double">9.316301511</dx>
+      <dy type="double">-6.853958661</dy>
+      <alt type="double">170.6776813</alt>
+      <course type="double">2.205079353</course>
+    </fence>
+    <pole n="22000">
+      <name type="string">#22-0</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">170.735744</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22001">
+      <name type="string">#22-1</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">170.8992679</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22002">
+      <name type="string">#22-2</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">170.9251514</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22003">
+      <name type="string">#22-3</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.0164815</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22004">
+      <name type="string">#22-4</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.109781</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22005">
+      <name type="string">#22-5</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.2040734</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22006">
+      <name type="string">#22-6</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.2983822</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22007">
+      <name type="string">#22-7</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.3936836</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22008">
+      <name type="string">#22-8</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.4890018</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22009">
+      <name type="string">#22-9</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.5853128</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22010">
+      <name type="string">#22-10</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.6787101</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22011">
+      <name type="string">#22-11</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.7721242</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <pole n="22012">
+      <name type="string">#22-12</name>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.8675079</alt>
+      <course type="double">2.825259434</course>
+    </pole>
+    <fence n="22000">
+      <name type="string">#22-0</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">170.713969</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22001">
+      <name type="string">#22-1</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">170.8648442</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22002">
+      <name type="string">#22-2</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">170.9708144</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22003">
+      <name type="string">#22-3</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.0611761</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22004">
+      <name type="string">#22-4</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.1583901</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22005">
+      <name type="string">#22-5</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.2517141</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22006">
+      <name type="string">#22-6</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.3460306</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22007">
+      <name type="string">#22-7</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.4423173</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22008">
+      <name type="string">#22-8</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.5366669</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22009">
+      <name type="string">#22-9</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.6300565</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22010">
+      <name type="string">#22-10</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.7244391</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22011">
+      <name type="string">#22-11</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.8207912</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <fence n="22012">
+      <name type="string">#22-12</name>
+      <lenght type="double">10.2168292</lenght>
+      <dx type="double">3.178290211</dx>
+      <dy type="double">-9.709895479</dy>
+      <alt type="double">171.9161829</alt>
+      <course type="double">2.825259434</course>
+    </fence>
+    <pole n="23000">
+      <name type="string">#23-0</name>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">171.9625364</alt>
+      <course type="double">4.414153476</course>
+    </pole>
+    <pole n="23001">
+      <name type="string">#23-1</name>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">171.9998421</alt>
+      <course type="double">4.414153476</course>
+    </pole>
+    <pole n="23002">
+      <name type="string">#23-2</name>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.0358171</alt>
+      <course type="double">4.414153476</course>
+    </pole>
+    <pole n="23003">
+      <name type="string">#23-3</name>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.070833</alt>
+      <course type="double">4.414153476</course>
+    </pole>
+    <pole n="23004">
+      <name type="string">#23-4</name>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.1048893</alt>
+      <course type="double">4.414153476</course>
+    </pole>
+    <pole n="23005">
+      <name type="string">#23-5</name>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.1379869</alt>
+      <course type="double">4.414153476</course>
+    </pole>
+    <fence n="23000">
+      <name type="string">#23-0</name>
+      <lenght type="double">10.54910843</lenght>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">171.9828374</alt>
+      <course type="double">4.414153476</course>
+    </fence>
+    <fence n="23001">
+      <name type="string">#23-1</name>
+      <lenght type="double">10.54910843</lenght>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.0188042</alt>
+      <course type="double">4.414153476</course>
+    </fence>
+    <fence n="23002">
+      <name type="string">#23-2</name>
+      <lenght type="double">10.54910843</lenght>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.0528349</alt>
+      <course type="double">4.414153476</course>
+    </fence>
+    <fence n="23003">
+      <name type="string">#23-3</name>
+      <lenght type="double">10.54910843</lenght>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.0859059</alt>
+      <course type="double">4.414153476</course>
+    </fence>
+    <fence n="23004">
+      <name type="string">#23-4</name>
+      <lenght type="double">10.54910843</lenght>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.1189948</alt>
+      <course type="double">4.414153476</course>
+    </fence>
+    <fence n="23005">
+      <name type="string">#23-5</name>
+      <lenght type="double">10.54910843</lenght>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.1569838</alt>
+      <course type="double">4.414153476</course>
+    </fence>
+    <pole n="1">
+      <name type="string">#</name>
+      <dx type="double">-10.08343329</dx>
+      <dy type="double">-3.099687367</dy>
+      <alt type="double">172.172505</alt>
+      <course type="double">4.414153476</course>
+    </pole>
+  </flightplan>
+</PropertyList>
