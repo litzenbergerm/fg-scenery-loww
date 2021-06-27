@@ -96,9 +96,6 @@ OBJECT_STATIC loww/container-rack.ac 16.56628082 48.11997727 174.1352 244.0 0.0 
 OBJECT_STATIC loww/container-rack.ac 16.56653731 48.12021388 174.1432 245.4 0.0 -0.0
 OBJECT_STATIC loww/container-rack.ac 16.56726067 48.12126366 172.8868 243.4 0.0 -0.0
 
-# fences
-
-
 # 'clutter' on apron
 
 OBJECT_SHARED Scenery/Models/Airport/Apronlamp22m180deg.xml 16.5646601451947 48.1182293594541 176.6 180.0 0.0 0.0
