@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+    <path>loww-radar-2.ac</path>
+
+    <animation>
+        <type>material</type>
+        <object-name>Radar2-fach</object-name>
+        <texture>Eastend_LIT.png</texture>
+        <condition>
+            <greater-than>
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.57</value>
+            </greater-than>
+        </condition>
+        <emission>
+            <red>1</red><green>1</green><blue>1</blue>
+        </emission>
+    </animation>
+
+    <animation>
+        <type>rotate</type>
+        <object-name>Radar2-spinner</object-name>
+        <property>/sim/time/elapsed-sec</property>
+        <factor>360</factor>
+        
+        <center>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </center>
+        <axis>
+            <x>0</x>
+            <y>0</y>
+            <z>1</z>
+        </axis>  
+    </animation>
+</PropertyList>
