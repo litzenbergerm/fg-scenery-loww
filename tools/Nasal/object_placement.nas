@@ -105,9 +105,13 @@ var do = func (conf) {
             if (typeof( obj[thist][objsel] ) == "scalar") {
                 thisobj = obj[thist][objsel];
                 modelori = 0;
+                modeloffs = 0;
+                
             } else {
+                # correct for model internal orientation and z-pos
                 thisobj = obj[thist][objsel].model;
                 modelori = obj[thist][objsel].model_ori;
+                modeloffs = obj[thist][objsel].zoffset;
             }
             
             # if objects are really close together make same orientation and name if same type
@@ -119,13 +123,13 @@ var do = func (conf) {
               thisori = (iORI==nil) ? int( rand()*360 ) : -a[i][iORI];
             }
             
-            if (find("/", thisobj ) > -1) {
+            if (find("Scenery/", thisobj ) > -1) {
               var objtype = "OBJECT_SHARED ";
             } else {
               var objtype = "OBJECT_STATIC ";
             }  
             
-            outline = objtype ~ thisobj ~" "~ lon ~" "~ lat ~" "~ int(e*100.0)/100.0 ~" "~ fix360(thisori+modelori) ~".0 0.0 0.0";
+            outline = objtype ~ thisobj ~" "~ lon ~" "~ lat ~" "~ (int(e*100.0)/100.0 - modeloffs) ~" "~ fix360(thisori+modelori) ~".0 0.0 0.0";
                 
             #add to main 3d model of city if possible
             if (objtype == "OBJECT_STATIC " and contains(citymodels, thisobj) and USE_3DCITY) {
