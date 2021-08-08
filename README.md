@@ -27,15 +27,15 @@ TODO
 
 -add missing buildings belonging to core airport from OSM and texture them .. in progress
 
--fix general airport layout and taxiways according to current sat imagery .. in progress
-
 -add rivers and streams
 
 -add industrial areas landclasses
 
 -add more apron objects from Flightgear object library
 
--add extension jetways at pier north
+-fix general airport layout and taxiways according to current sat imagery .. done
+
+-add extension jetways at pier north .. done
 
 -fix missing apron section in GA area .. done
 
