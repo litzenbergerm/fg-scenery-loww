@@ -76,11 +76,11 @@ OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56699314 48.11777709 178 340.0 0
 OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56704599 48.11778905     177.5 12.6 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56753676 48.11759832 178 340.0 0.0 -0.0
 OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56808176 48.11742292 178 341.1 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56812843 48.11743266          178 24.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56862351 48.11724328          178 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56917285 48.11706906 178 344.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56922017 48.11707884          178 8.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56971265 48.11688910          178 328.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56812843 48.11743266          178 10.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56862351 48.11724328          178.4 340.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56917285 48.11706906 178.4 334.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56922317 48.11707884          178.3 0.0 0.0 -0.0
+OBJECT_STATIC loww/jetway-uniqa.xml 16.56971265 48.11688910          178.7 328.0 0.0 -0.0
 
 # jetways with uniqa logo, pier-nord, north side, from east to west
 
