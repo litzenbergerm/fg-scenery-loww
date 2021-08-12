@@ -130,6 +130,76 @@
 </animation>
 <animation>
   <type>material</type>
+  <object-name>building.438543650</object-name>
+  <texture>Eastend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>building.438543651</object-name>
+  <texture>336_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>building.438543654</object-name>
+  <texture>Eastend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>building.438543657</object-name>
+  <texture>Eastend_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
+  <object-name>building.438543659</object-name>
+  <texture>336_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+<animation>
+  <type>material</type>
   <object-name>building.487467574</object-name>
   <texture>moxi-officepark-4_LIT.png</texture>
   <condition>
