@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+  <path>max-span-sign.ac</path>
+  <offsets>
+    <z-m>0.1</z-m>
+    <y-m>0.0</y-m>
+    <x-m>0.0</x-m>
+  </offsets>
+
+  <text>
+    <name>span1</name>
+    <offsets>
+        <x-m>-0.75</x-m>
+        <y-m>0.0</y-m>
+        <z-m>0.1</z-m>
+        <heading-deg>90</heading-deg>
+    </offsets>
+    <alignment>center-center</alignment>
+    <axis-alignment>xy-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">MAX SPAN</text>      
+    <font>helvetica_bold.txf</font>
+    <character-size>1.7</character-size>
+    <character-aspect-ratio type="double">1.9</character-aspect-ratio>
+    <font-resolution>
+        <width type="int">128</width>
+        <height type="int">256</height>
+    </font-resolution>
+  </text> 
+
+  <text>
+    <name>span2</name>
+    <offsets>
+        <x-m>0.75</x-m>
+        <y-m>0.0</y-m>
+        <z-m>0.1</z-m>
+        <heading-deg>90</heading-deg>
+    </offsets>
+    <alignment>center-center</alignment>
+    <axis-alignment>xy-plane</axis-alignment>
+    <type type="string">literal</type>
+    <text type="string">80M</text>      
+    <font>helvetica_bold.txf</font>
+    <character-size>1.7</character-size>
+    <character-aspect-ratio type="double">1.9</character-aspect-ratio>
+    <font-resolution>
+        <width type="int">128</width>
+        <height type="int">256</height>
+    </font-resolution>
+  </text> 
+  
+  <animation>
+      <object-name>sign</object-name>
+      <object-name>span1</object-name>
+      <object-name>span2</object-name>
+      <enable-hot type="bool">false</enable-hot>
+  </animation>
+  
+</PropertyList>
