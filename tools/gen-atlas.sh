@@ -12,7 +12,7 @@ do
     
     while IFS= read -r f
     do
-      arg="$arg $f"
+      arg="$f $arg"
     done < "$a"
     
     convert -append $arg "${a%.*}".png
