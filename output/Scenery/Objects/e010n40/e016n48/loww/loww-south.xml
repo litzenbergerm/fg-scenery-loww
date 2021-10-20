@@ -4,8 +4,8 @@
 <path>loww-south.ac</path>
 <animation>
   <type>material</type>
-  <object-name>RadarKugel</object-name>
-  <texture>Eastend_LIT.png</texture>
+  <object-name>loww-south</object-name>
+  <texture>loww-south_LIT.png</texture>
   <condition>
     <greater-than>
     <property>/sim/time/sun-angle-rad</property>
