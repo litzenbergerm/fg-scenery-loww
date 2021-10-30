@@ -40,12 +40,18 @@ var do = func (conf) {
    
    var a = getcsv(filein);
    var stg = { };
+   var params = { };
    
    # search headers for codes   
    var iLAT = getidx(a[0], LAT);
    var iLON = getidx(a[0], LON);
    var iTYP = getidx(a[0], TYP);
    var iORI = getidx(a[0], ORI);
+   
+   debug.dump(a[0]);
+   
+   if (iLAT==nil or iLON==nil or iTYP==nil or iORI==nil)
+      die("cvs field codes not found in header! ");
    
    var out = [a[0]]; 
                      
@@ -71,20 +77,49 @@ var do = func (conf) {
    var unknown = 0;
    var incity = 0;
    var objsel = 0;
+   var param = "";
      
    for (var i=1; i < l; i=i+1) {
+   
       # loop through all buildings
       var thist = string.uc( a[i][iTYP] );
+      
+      # check if this typ is a parameter object
+      # separate parameter from object type
+      
+      if (find("@", thist ) > -1) {
+            var temp = split("@", thist);
+            thist = temp[0];
+            param = temp[1];
+       } else {
+            param = "";
+       }      
       
       if (!contains(obj, thist)) {
         print("# ***** ERROR ***** object code unknown: ",thist);
         unknown += 1;
       } else {
+      
+        # check if this typ is a parameter object
+        # save parameter to list
+        
+        if (param != "") {
+           if (contains(params, thist)) 
+              append( params[thist], param );
+           else
+              params[thist] = [param,];
+        }
      
         # get point get_elevation
         lat = a[i][iLAT];
         lon = a[i][iLON];
-        var e = geo.elevation(lat ,lon);        
+        
+        var e = geo.elevation(lat ,lon);
+        if (e == nil) {
+          print('warning no elevation for ', thist, " at ",lat," ",lon );
+          e=0;
+        }
+        
         append(out, [lat, lon, e, thist]);
         
         if (PLACEMENT=="rand") {
@@ -93,8 +128,9 @@ var do = func (conf) {
             cycl[thist] = (cycl[thist]==size(obj[thist])-1 ? 0 : cycl[thist]+1);
             objsel = cycl[thist];
         }    
-            
-        thispos.set_latlon(lat, lon, e);
+        
+        
+        thispos.set_latlon(lat, lon, e);        
         var tolast = thispos.direct_distance_to(lastpos);
         
         if (tolast < MINDIST) {
@@ -128,6 +164,10 @@ var do = func (conf) {
             } else {
               var objtype = "OBJECT_STATIC ";
             }  
+            
+            if (param != "") {
+                thisobj = split(".", thisobj)[0] ~ param ~ "." ~ split(".", thisobj)[1]; 
+            }
             
             outline = objtype ~ thisobj ~" "~ lon ~" "~ lat ~" "~ (int(e*100.0)/100.0 - modeloffs) ~" "~ fix360(thisori+modelori) ~".0 0.0 0.0";
                 
@@ -193,6 +233,22 @@ var do = func (conf) {
       io.write(f, stg[k]);
       io.close(f);
    }
+   
+   #write all parameterized model XML files
+      
+   #debug.dump(params);
+   foreach(var k; keys(params)) {   
+      # read the template object xml. in this, parameter must be marked as '@'
+      var filexml = obj[k][0];
+      var modelxml = io.readfile(pathout ~ filexml );
+      
+      foreach(var p; params[k]) {
+         var f= io.open(pathout ~ split(".", filexml)[0] ~ p ~ "." ~ split(".", filexml)[1] ,'w');
+         io.write(f, string.replace(modelxml, "@", p));
+         io.close(f);
+      }
+   }
+   
    
    print(total, " objects placed (", total/l*100, "%, in city: ", incity/l*100 ,"%). Too close: ", tooclose, ". unknown: ", unknown );
 };

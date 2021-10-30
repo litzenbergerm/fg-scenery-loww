@@ -1,3 +1,5 @@
+# a class and helper functions for loading and manipulating 3D-models in AC3D files
+
 io.include("fghome/Nasal/common-geo.nas");
 
 var NL = utf8.chstr(10);
@@ -351,10 +353,8 @@ var Ac3d = {
             oo.texrep = split(" ", rep);
 
         if (rot != nil) {
-        oo.rot = [ split(" ", split("  ", rot)[0]), 
-                    split(" ", split("  ", rot)[1]), 
-                    split(" ", split("  ", rot)[2])
-                    ];
+          # 3 x 3 rotation matrix as a 9 element vector
+          oo.rot = split(" ", rot);
         }
         
         #parse vertices
@@ -499,6 +499,15 @@ var Ac3d = {
              io.write(f, "loc "~fix(x.loc[0],pr)~" "~fix(x.loc[1],pr)~" "~fix(x.loc[2],pr)~NL);
           io.write(f, "numvert "~size(x.vert)~NL);
           
+          # 3 x 3 rotation matrix as a 9 element vector
+          if ( contains(x, "rot") ) 
+            if (x.rot!=nil) {
+                io.write(f, "rot");
+                foreach (var r; x.rot) 
+                    io.write(f, " "~fix(r, 6));
+                io.write(f, NL);
+             }
+
           #write object vertices
           foreach (var v; x.vert) 
             io.write(f, fix(v[0],pr)~" "~fix(v[1],pr)~" "~fix(v[2],pr)~NL);
@@ -551,30 +560,58 @@ var Ac3d = {
     
     joinall: func(newname="object.000") {
         if (size(me.obj)==0) 
-           return;
+           return [];
          
         var oo = me.newobj();
-        #joined objects must share the same texture file!
-        oo.texture = me.obj[0].texture;
+        # joined objects must share the same texture file!
+        # we assume that the texture atlas has the same name as the object
+        
+        # therefore build a texture 'atlas' before joining objects
+        
+        var atlas = [];
+        foreach (var x; me.obj) {
+           if (x.texture==nil or x.texture=="" or x.texture=='""') {
+              print("warning: libac3d.joinall, no texture for object "~x.name);
+           } else {
+            if (isin(x.texture, atlas) == -1)
+                append(atlas, x.texture);
+           }
+        }        
+        var atlasn = size(atlas);
+        
+        oo.texture = '"' ~ newname ~ '.png"'; 
         oo.texrep = me.obj[0].texrep;
-        oo.name = '"'~newname~'"';   
+        oo.name = '"'~newname~'"';
         
         var offset = 0;
         foreach (var x; me.obj) {
+           # add only textured objects! 
+           if (x.texture!=nil and x.texture!="" and x.texture!='""') {
            
-           foreach (var v; x.vert) {
-              append(oo.vert, add3d(v, x.loc));
-           }
-           
-           foreach (var s; x.surf) {
-             var ss={refs:[], mat:s.mat, flag:s.flag};
-             foreach (var v; s.refs) 
-               append(ss.refs, [v[0]+offset, v[1], v[2]] );
-             append(oo.surf, ss);             
-           }
-           offset += size(x.vert);
+                foreach (var v; x.vert) {
+                    append(oo.vert, add3d(v, x.loc));
+                }
+                
+                # which texture index to use?
+                var atlasidx = isin(x.texture, atlas);          
+                
+                if (atlasidx==-1)
+                    die("error: libac3d.joinall, no atlas position for object "~x.name);
+                    
+                foreach (var s; x.surf) {
+                    var ss={refs:[], mat:s.mat, flag:s.flag};
+                    foreach (var v; s.refs) 
+                    append(ss.refs, [v[0]+offset, 
+                                        v[1], 
+                                        ((v[2] + atlasidx) / atlasn) ] );
+                    append(oo.surf, ss);             
+                }
+                offset += size(x.vert);
+            }    
         }
-        me.obj=[oo,];   
+        me.obj=[oo,];
+        
+        return atlas;
     },
     
     addac: func(ac, objidx=-1) {
@@ -634,6 +671,28 @@ var Ac3d = {
 
     },
         
+    recentercog: func(idx=-1) {
+        # recenter to cog plus translation to cog
+        # 
+        if (size(me.obj)==0 or idx>size(me.obj)-1) 
+           return;
+        
+        if (idx == -1)
+          idx=size(me.obj)-1;
+        
+        var cog = [0,0,0];
+        var tmp = [0,0,0];
+        var objv = me.obj[idx].vert;
+        cog = me.centroid(-1, idx);
+        
+        me.obj[idx].loc = deepcopy(cog);
+        
+        # recalc object vertices
+        for (var i=0; i<size(objv); i=i+1)
+                objv[i] =  sub3d(objv[i], cog);
+          
+    },
+
     transobj: func(t, idx=-1) {
         if (size(me.obj)==0 or idx>size(me.obj)-1) 
            return;
@@ -649,26 +708,59 @@ var Ac3d = {
           
     },
     
-    centroid: func(idx=-1, iobj=-1) {
+    packobj: func(idx=-1) {
+        # replace the loc vector by an absolute shift
+        #
+        if (size(me.obj)==0 or idx>size(me.obj)-1) 
+           return;
+        
+        if (idx == -1)
+          idx=size(me.obj)-1;
+        
+        if (equal3d(me.obj[idx].loc, [0,0,0]))
+          return;
+      
+        var objv = me.obj[idx].vert;
+        # recalc object vertices
+        for (var i=0; i<size(objv); i=i+1)
+                objv[i] =  add3d(objv[i], me.obj[idx].loc);
+                
+        set3d(me.obj[idx].loc, [0,0,0]);
+        
+    },
+        
+    centroid: func(dummy=0, iobj=-1) {
+      # calculate cog of object index iobj
+      # 
       var cog = [0,0,0];
       var objv = me.obj[iobj].vert;
-            
-      #use all vertices of this obj
-      if (idx==-1) {
-          var all=[];
-          for(var i=0; i<size(objv); i=i+1) 
-              append(all, i);
-          idx = all;
-      }
-                 
-      var l = size( idx );
-      foreach (var i; idx) 
+      var l = size(objv);
+      
+      for (var i=0; i<l; i=i+1)
             cog = add3d(cog, objv[i]);
       
       return [cog[0]/l+me.obj[iobj].loc[0],
               cog[1]/l+me.obj[iobj].loc[1],
               cog[2]/l+me.obj[iobj].loc[2] 
              ];
+    },
+    
+    bbox: func(iobj=-1) {
+      # calculate bounding box of object index iobj
+      
+      var objv = me.obj[iobj].vert;
+      var bbmax = deepcopy( objv[0] );
+      var bbmin = deepcopy( objv[0] );
+      
+      foreach (var i; objv) { 
+       foreach (var dim; [0,1,2]) {
+         bbmax[dim] = (i[dim] > bbmax[dim]) ? i[dim] : bbmax[dim];
+         bbmin[dim] = (i[dim] < bbmin[dim]) ? i[dim] : bbmin[dim];
+        }
+      }
+      return {"min": add3d(bbmin, me.obj[iobj].loc),
+              "max": add3d(bbmax, me.obj[iobj].loc)
+             };
     },
     
     rotobjY: func(alpha, idx=-1) {
@@ -849,6 +941,8 @@ var test = func() {
   out.fill([0,1,2,3,4,5,6,7]);
   debug.dump(out.vert());
   
+  out.recentercog(-1);
+  
   # triangulation test structure U
   out.addobj();
   out.addvert([0,-15,0]);
@@ -862,6 +956,8 @@ var test = func() {
   
   #fill the last vertices CW by triangulation
   out.fill([0,1,2,3,4,5,6,7], tria=1);
+
+  out.recentercog(-1);
   
   print(size(out.obj[-1].vert));
   out.remdup();

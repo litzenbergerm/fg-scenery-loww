@@ -1,4 +1,4 @@
-# common functions for geo
+# common functions for geo calculations
 
 var ECIRC=geo.ERAD*2.0*math.pi/360.0;
 
@@ -11,6 +11,7 @@ var ac2bl = func(v) { return [v[0], -v[2], v[1]] };
 var add3d = func(a,b) { return [a[0]+b[0], a[1]+b[1], a[2]+b[2]] };
 var sub3d = func(a,b) { return [a[0]-b[0], a[1]-b[1], a[2]-b[2]] };
 var equal3d = func(a,b) { return (a[0]==b[0] and a[1]==b[1] and a[2]==b[2]) };
+var set3d = func(a,b) { a[0]=b[0]; a[1]=b[1]; a[2]=b[2]; };
 
 
 var isin = func (needle, haystack) {
