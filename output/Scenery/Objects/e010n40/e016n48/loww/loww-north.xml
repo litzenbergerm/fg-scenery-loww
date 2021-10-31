@@ -16,4 +16,27 @@
      <red>1</red><green>1</green><blue>1</blue>
   </emission>
 </animation>
+
+<effect>
+  <name>windows-reflect</name>
+  
+  <inherits-from>Effects/glass</inherits-from>
+  <parameters>
+    <texture n="3">
+      <type>cubemap</type>
+      <images>
+         <positive-x>Aircraft/Generic/Effects/CubeMaps/buildings/N.png</positive-x>
+         <negative-x>Aircraft/Generic/Effects/CubeMaps/buildings/S.png</negative-x>
+         <positive-y>Aircraft/Generic/Effects/CubeMaps/buildings/W.png</positive-y>
+         <negative-y>Aircraft/Generic/Effects/CubeMaps/buildings/E.png</negative-y>
+         <positive-z>Aircraft/Generic/Effects/CubeMaps/buildings/U.png</positive-z>
+         <negative-z>Aircraft/Generic/Effects/CubeMaps/buildings/D.png</negative-z>
+      </images>
+    </texture>
+    <use-reflection type="int">1</use-reflection>
+    <reflection-strength><use>/rendering/scene/diffuse/red</use></reflection-strength>
+  </parameters>  
+  <object-name>glass</object-name>
+</effect>
+
 </PropertyList>
