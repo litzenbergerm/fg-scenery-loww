@@ -54,3 +54,9 @@ Make sure to have write access to your flightgear root directory.
 Make a backup copy of Scenery/Objects/e010n40/e016n48 and Scenery/Terrain/e010n40/e016n48, they will be overwritten!
 
 Copy the content of repo folder 'output' into your flightgear root directory.
+
+SCREENSHOTS
+
+![Screenshot 1](./screenshots/1.png?raw=true "View from firestation east")
+![Screenshot 2](./screenshots/2.png?raw=true "View to west")
+![Screenshot 3](./screenshots/3.png?raw=true "View to north")
