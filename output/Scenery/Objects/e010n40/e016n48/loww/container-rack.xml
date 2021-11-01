@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+<path>container-rack.ac</path>
+<animation>
+  <type>material</type>
+  <object-name>Plane</object-name>
+  <texture>container-rack_LIT.png</texture>
+  <condition>
+    <greater-than>
+    <property>/sim/time/sun-angle-rad</property>
+    <value>1.57</value>
+    </greater-than>
+  </condition>
+  <emission>
+     <red>1</red><green>1</green><blue>1</blue>
+  </emission>
+</animation>
+</PropertyList>
