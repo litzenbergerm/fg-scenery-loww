@@ -57,6 +57,6 @@ Copy the content of repo folder 'output' into your flightgear root directory.
 
 SCREENSHOTS
 
-![Screenshot 1](./screenshots/1.png?raw=true "View from firestation east")
-![Screenshot 2](./screenshots/2.png?raw=true "View to west")
-![Screenshot 3](./screenshots/3.png?raw=true "View to north")
+![Screenshot 1](./screenshot/1.png?raw=true "View from firestation east")
+![Screenshot 2](./screenshot/2.png?raw=true "View to west")
+![Screenshot 3](./screenshot/3.png?raw=true "View to north")
