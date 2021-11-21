@@ -16,16 +16,29 @@ OBJECT_SHARED Models/Airport/localizer.xml 16.576778 48.123064 171.39 74.23
 OBJECT_SHARED Models/Airport/localizer.xml 16.589522 48.104517 179.31 206.03
 OBJECT_SHARED Models/Airport/localizer.xml 16.5927 48.085417 167.95 254.24
 
+# LOWW tower from terrasync
+OBJECT_STATIC LOWW_tower.xml 16.56169 48.12259 171.27 225
 
+# static airport objects, building groups
+
+OBJECT_STATIC loww/loww-ga.xml 16.53702473 48.12804987 174.30 0.0
+OBJECT_STATIC loww/loww-hangars.xml 16.54538735 48.12651239 174.44 0.0
+OBJECT_STATIC loww/loww-cargo.xml 16.55278563 48.12429820 175.29 0.0
+OBJECT_STATIC loww/loww-north.xml 16.56875958 48.12631183 170.31 0.0
+OBJECT_STATIC loww/loww-businesspark.xml 16.56156189 48.12278682 185.14 0.0
+OBJECT_STATIC loww/loww-terminals.xml 16.56090935 48.11928948 181.45 0.0
+OBJECT_STATIC loww/loww-tank.xml 16.56846178 48.12207300 177.70 0.0
+OBJECT_STATIC loww/loww-east.xml 16.57407174 48.12742967 175.20 0.0
+OBJECT_STATIC loww/loww-fire-east.xml 16.57478671 48.11319117 185.58 0.0
+OBJECT_STATIC loww/loww-south.xml 16.56134518 48.10443985 225.93 0.0
+
+# LOWW east radar towers
+OBJECT_STATIC loww/loww-radar-2.xml 16.577930 48.100608 187.0 0.0
 
 # FEST Flugeinsatzstelle (police hangar and helipad)
 
 OBJECT_STATIC loww/loww-fest.xml 16.54261229 48.13066797 170.25 0.0
 OBJECT_SHARED Scenery/Models/Airport/extinguisher.ac 16.54227911 48.13052323 170.25 0.0
-
-# LOWW tower from terrasync
-OBJECT_STATIC LOWW_tower.xml 16.56169 48.12259 171.27 225
-
 
 #container racks north and cargo area
 
@@ -51,20 +64,6 @@ OBJECT_STATIC loww/loww-fence-11.ac 16.56792052 48.12389081 170.17 0 0 0
  
 OBJECT_STATIC loww/loww-fence-12.ac 16.56923847 48.12255891 171.65 0 0 0  
 OBJECT_STATIC loww/loww-fence-13.ac 16.5717628 48.1215263 172.85 0 0 0  
-
-# static airport objects, building groups
-OBJECT_STATIC loww/loww-ga.xml 16.53702473 48.12804987 174.30 0.0
-OBJECT_STATIC loww/loww-north.xml 16.54588429 48.12665772 174.20 0.0
-OBJECT_STATIC loww/loww-hangars.xml 16.55234771 48.12403099 175.05 0.0
-OBJECT_STATIC loww/loww-businesspark.xml 16.56345652 48.12443779 181.66 0.0
-OBJECT_STATIC loww/loww-terminals.xml 16.56124161 48.11972551 181.65 0.0
-OBJECT_STATIC loww/loww-tank.xml 16.58143789 48.12531505 179.26 0.0
-OBJECT_STATIC loww/loww-east.xml 16.58308417 48.11628019 179.93 0.0
-OBJECT_STATIC loww/loww-southeast.xml 16.58990202 48.09727810 177.45 0.0
-OBJECT_STATIC loww/loww-south.xml 16.56134518 48.10443985 225.93 0.0
-
-#LOWW east radar towers
-OBJECT_STATIC loww/loww-radar-2.xml 16.577930 48.100608 187.0 0.0
 
 #OBJECT_SHARED fghome/Export/max-span-sign.xml 16.57538794 48.10941838 185.7822 0.0 0.0 -0.0
 
