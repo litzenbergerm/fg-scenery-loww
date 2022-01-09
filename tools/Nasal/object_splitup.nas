@@ -9,6 +9,8 @@
 #io.load_nasal( getprop("/sim/fg-home") ~ "/Nasal/object_splitup.nas");
 #object_splitup.do( getprop("/sim/fg-home") ~ "/Export/loww-xplane-buildings.ac", 48.117921, 16.560051 );
 
+var gpltxt = "\n\n<!-- LOWW airport scenery model for the Flightgear flight simulator.\n\nThis program is free software: you can redistribute it and/or modify it under \nthe terms of the GNU General Public License as published by the Free Software Foundation, \neither version 2 of the License, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT \nANY WARRANTY; without even the implied warranty of MERCHANTABILITY \nor FITNESS FOR A PARTICULAR PURPOSE. See the GNU General \nPublic License for more details.\n\nCredits: Original X Plane authors wuseldusel, danielman, Patrik W. and oe3gsu.\nConverted for Flightgear by powoflight.\nModel mesh optimization by M.Litzenberger (litzi on forum).\n-->\n\n";
+
 io.include("/fghome/Nasal/common-geo.nas");
 
 var JOINALL = 1;
@@ -24,17 +26,23 @@ var groups = [
     {name:"loww-hangars", 
        bb: [16.540, 16.549, 48.200, 48.116]
     },
-    {name:"loww-cargo", 
-       bb: [16.549, 16.5565, 48.200, 48.121]
+    {name:"loww-cargo-west", 
+       bb: [16.549, 16.5535, 48.200, 48.121]
+    },
+    {name:"loww-cargo-east", 
+       bb: [16.5535, 16.5565, 48.200, 48.121]
     },
     {name: "loww-north" ,
         bb: [16.556, 16.570, 49.0, 48.125]
     },
-    {name: "loww-businesspark",
-       bb: [16.5565, 16.567, 48.125, 48.121]
+#    {name: "loww-businesspark",
+#       bb: [16.5565, 16.567, 48.125, 48.121]
+#    },
+    {name:"loww-terminals-west",
+       bb: [16.5555, 16.5617, 48.121, 48.116]
     },
-    {name:"loww-terminals",
-       bb: [16.5555, 16.570,  48.121, 48.116]
+    {name:"loww-terminals-east",
+       bb: [16.5617, 16.570, 48.121, 48.116]
     },
     {name:"loww-tank",
        bb: [16.567, 16.574, 48.124, 48.121] 
@@ -47,8 +55,7 @@ var groups = [
     },
     {name: "loww-south",
       bb: [16.556, 16.570, 48.116, 48.0]
-    },
-    
+    }    
 ];
 
 var pathout=getprop("/sim/fg-home") ~ "/Export/";
@@ -168,9 +175,9 @@ var do = func (fn, reflat=nil, reflon=nil) {
    foreach (var g; groups) {   
        
       var f = io.open(pathout ~ g.name ~ ".xml","w");
-      io.write(f, '<?xml version="1.0"?>'); 
+      io.write(f, '<?xml version="1.0" encoding="UTF-8"?>'); 
+      io.write(f, gpltxt);
       io.write(f, "\n<PropertyList>\n\n" ); 
-      
       io.write(f, "<path>"~g.name~".ac</path>\n" ); 
       
       if (JOINALL) {

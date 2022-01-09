@@ -19,11 +19,11 @@ Model mesh optimization by M.Litzenberger (litzi on forum).
 
 <PropertyList>
 
-<path>loww-hangars.ac</path>
+<path>loww-cargo-east.ac</path>
 <animation>
   <type>material</type>
-  <object-name>loww-hangars</object-name>
-  <texture>loww-hangars_LIT.png</texture>
+  <object-name>loww-cargo-east</object-name>
+  <texture>loww-cargo-east_LIT.png</texture>
   <condition>
     <greater-than>
     <property>/sim/time/sun-angle-rad</property>
