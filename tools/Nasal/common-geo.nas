@@ -29,13 +29,7 @@ var dsquare = func(a,b) {
 }   
 
 var fix = func(x, p=3) {
- var k = find(".",""~x);
- 
- if (k==-1) 
-    return ""~x;
- else
-    return substr(""~x, 0, k+p+1);
- 
+   return sprintf("%."~p~"f",x);     
 };
 
 var fix360 = func (x) {

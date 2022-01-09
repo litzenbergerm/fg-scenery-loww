@@ -518,7 +518,7 @@ var Ac3d = {
           foreach (var s; x.surf) {
              io.write(f, "SURF 0x"~s.flag~"\nmat "~s.mat~"\nrefs "~size(s.refs)~NL);
              foreach (var v; s.refs) 
-                io.write(f, v[0] ~ " " ~ v[1] ~ " " ~ v[2] ~ NL);
+                io.write(f, v[0] ~ " " ~ fix(v[1],4) ~ " " ~ fix(v[2],4) ~ NL);
           }
           io.write(f, "kids 0" ~ NL);
        } 
@@ -577,7 +577,29 @@ var Ac3d = {
                 append(atlas, x.texture);
            }
         }        
+        
+        # force a power of 2 atlas size,
+        # 1, 2, 4, 8
+        # therefore atlasn must be an even number
+        # if not,append a dummy texture
+
         var atlasn = size(atlas);
+        
+        if (atlasn > 8)
+            die("error: libac3d.joinall, more than 8 textures not allowed in " ~ newname);
+        
+        if (atlasn == 3 or atlasn > 4) {
+           print("libac3d: libac3d.joinall, adding dummy texture 'black.png' to force power of 2 texture atlas size");
+           if (atlasn == 3) {
+              atlasn += 1;
+              append(atlas, "black.png");
+           } else {
+              for (var i=atlasn; i<8; i=i+1)
+                 append(atlas, "black.png");
+              atlasn = 8;           
+                  
+           }
+        }
         
         oo.texture = '"' ~ newname ~ '.png"'; 
         oo.texrep = me.obj[0].texrep;
@@ -587,7 +609,8 @@ var Ac3d = {
         foreach (var x; me.obj) {
            # add only textured objects! 
            if (x.texture!=nil and x.texture!="" and x.texture!='""') {
-           
+                
+                # append all vertices to new obj
                 foreach (var v; x.vert) {
                     append(oo.vert, add3d(v, x.loc));
                 }
@@ -602,8 +625,8 @@ var Ac3d = {
                     var ss={refs:[], mat:s.mat, flag:s.flag};
                     foreach (var v; s.refs) 
                     append(ss.refs, [v[0]+offset, 
-                                        v[1], 
-                                        ((v[2] + atlasidx) / atlasn) ] );
+                                     v[1], 
+                                   ((v[2] + atlasidx) / atlasn) ] );
                     append(oo.surf, ss);             
                 }
                 offset += size(x.vert);

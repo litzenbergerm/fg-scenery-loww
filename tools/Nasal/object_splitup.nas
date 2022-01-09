@@ -14,6 +14,7 @@ var gpltxt = "\n\n<!-- LOWW airport scenery model for the Flightgear flight simu
 io.include("/fghome/Nasal/common-geo.nas");
 
 var JOINALL = 1;
+var ALIGN2GROUND = 0;
 
 # bounding box definition for building groups
 # bb = l r u d
@@ -88,8 +89,9 @@ var do = func (fn, reflat=nil, reflon=nil) {
     foreach(var g; groups) {
         g["model"]=libac3d.Ac3d.new();
         g["refpoint"]=geo.Coord.new();
-        g["objlist"]= [];
+        g["objlist"]= {};
         g["cog"]= [0,0,0];
+        g["n"] = 0;
         
     }    
     
@@ -106,7 +108,7 @@ var do = func (fn, reflat=nil, reflon=nil) {
     var lat = 0;
     var lon = 0;
         
-    # loop through all objects
+    # loop through all objects and assign to group
     for (var i=0; i < l; i+=1) {
     
         var cog = mainmodel.centroid(-1, i); # in meters
@@ -116,23 +118,25 @@ var do = func (fn, reflat=nil, reflon=nil) {
         #find the cog position of this object in wgs84
         
         var thispos = Dxy2wgs(refpoint, ac2bl(cog) ); # in wgs84
+        var thisalt = geo.elevation(thispos.lat(), thispos.lon());
         print("testing... ", mainmodel.obj[i].name );
         thispos.dump(); 
             
         foreach(var g; groups) {
             if (geoinside(thispos, g.bb)) {
                 print("splitup: add ", mainmodel.obj[i].name );
-                g.cog = add3d( g.cog, cog);    # add to sum cog of group, meters
+                g.cog = add3d(g.cog, cog); # add to sum COG of group, meters
                 
                 g.model.addac(mainmodel, i);
-                append(g.objlist, { 
+                g.objlist[g.n] = { 
                       name: string.replace(mainmodel.obj[i].name, '"', "") , 
                       tex:  string.replace(mainmodel.obj[i].texture , '"', "") ,
                       bb:   bb,
-                      pos:  [thispos.lat(), thispos.lon(), thispos.alt()],
+                      pos:  [thispos.lat(), thispos.lon(), thisalt],
                       cog:  cog
-                     }     
-                );
+                      };     
+                g.n +=1;
+                
             }    
         }
     }
@@ -140,24 +144,43 @@ var do = func (fn, reflat=nil, reflon=nil) {
     # write all groups' ac model files   
     var f1 = io.open(pathout ~ "splitobjects.stg","w");
    
+    # loop through all objects of a group and join
     foreach(var g; groups) {
         n=size(g.model.obj);
         if (n>0) {
-            g.cog = [g.cog[0]/n, g.cog[1]/n, g.cog[2]/n]; # cog of group, meters
-            g.refpoint = Dxy2wgs(refpoint, ac2bl(g.cog) ); # cog of group, in wgs
+            g.cog = [g.cog[0]/n, g.cog[1]/n, g.cog[2]/n];  # ref. point at avg. X-Y-Z cog of group, in meters
+            g.refpoint = Dxy2wgs(refpoint, ac2bl(g.cog) ); # cog of group, in wgs84
             
-            #shift all buildings by -cog (to cog)
+            # check terr. heigth of this group refpoint
+            var myalt = geo.elevation(g.refpoint.lat(), g.refpoint.lon());    
+            g.refpoint.set_alt(myalt);
+            
+            #shift all buildings of group by -cog (to cog)
             for(var i=0; i<n; i+=1) {
                 g.model.recentercog(i);
-                g.model.transobj(sub3d( [0,0,0], g.cog ), i);
-                
+                bb = g.model.bbox(i);
+                if (ALIGN2GROUND) {
+                    # align all objects of group all to same to ground level z=0
+                    var shiftz = -bb.min[1];
+                } else {
+                    # align all objects of group to the terrain ground level
+                    var shiftz = -bb.min[1] - (g.refpoint.alt() - g.objlist[i].pos[2]);
+                }    
+                g.model.transobj( [-g.cog[0], shiftz, -g.cog[2]], i);
             }
             
             if (JOINALL) {
                  #combine all buildings into one model
                  var atlas = g.model.joinall(g.name);
                  g.atlas = atlas;
+                 
+                 #if (!ALIGN2GROUND) {
+                    # shift whole model min.z (index 1!) to ground level (but keep individual offsets)
+                    #bb = g.model.bbox();
+                    #g.model.transobj([0, -bb.min[1], 0]);
+                 #}
             }
+
             
             #debug.dump(g.cog);
             g.model.save(pathout~g.name~".ac",2);
