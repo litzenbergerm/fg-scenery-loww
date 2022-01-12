@@ -174,8 +174,7 @@ Public License for more details.
 <animation>
  	<object-name>lightvolume</object-name>
  	<object-name>lightarea</object-name>
- 	<object-name>blah</object-name>
-<enable-hot type="bool">false</enable-hot>
+    <enable-hot type="bool">false</enable-hot>
 </animation>
 
 <animation>
