@@ -36,9 +36,12 @@ var groups = [
     {name: "loww-north" ,
         bb: [16.556, 16.570, 49.0, 48.125]
     },
-#    {name: "loww-businesspark",
-#       bb: [16.5565, 16.567, 48.125, 48.121]
-#    },
+    {name: "loww-businesspark-north",
+       bb: [16.5565, 16.567, 48.125, 48.12249]
+    },
+    {name: "loww-businesspark-south",
+       bb: [16.5565, 16.567, 48.12249, 48.121]
+    },
     {name:"loww-terminals-west",
        bb: [16.5555, 16.5617, 48.121, 48.116]
     },
@@ -48,9 +51,9 @@ var groups = [
     {name:"loww-tank",
        bb: [16.567, 16.574, 48.124, 48.121] 
     },
-    {name: "loww-east",
-      bb: [16.570, 16.581, 49.0, 48.124]
-    },
+#    {name: "loww-east",
+#      bb: [16.570, 16.581, 49.0, 48.124]
+#    },
     {name: "loww-fire-east",
       bb: [16.570, 16.581, 48.116, 48.112]
     },
