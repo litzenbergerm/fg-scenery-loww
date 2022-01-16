@@ -25,7 +25,7 @@ Public License for more details.
 
 <!--<animation>
     <type>material</type>
-	<object-name>lightarea</object-name>
+	<object-name>lightcone</object-name>
     <transparency>
         <alpha-prop>environment/visibility-m</alpha-prop>
         <factor>1</factor>
@@ -35,24 +35,55 @@ Public License for more details.
 </animation>-->
 
 <animation>
-<type>select</type>
-	<object-name>lightarea</object-name>
+    <type>select</type>
+    <object-name>lightarea</object-name>
     <condition>		
-    <greater-than>		
+      <greater-than>		
         <property>/sim/time/sun-angle-rad</property>
         <value>1.49</value>
-    </greater-than>
+      </greater-than>
+      <not>
+          <property>/sim/rendering/rembrandt/enabled</property>
+      </not>
+    </condition>
+</animation>
+
+<!-- lightcone visibility depending on atmospheric visibility-->
+<animation>
+    <type>select</type>
+	<object-name>lightcone</object-name>
+    <condition>		
+      <less-than>		
+        <property>environment/visibility-m</property>
+        <value>3000.0</value>
+      </less-than>
+      <greater-than>		
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.49</value>
+      </greater-than>
+      <not>
+          <property>/sim/rendering/rembrandt/enabled</property>
+      </not>
     </condition>
 </animation>
 
 <animation>
-    <type>select</type>
-    <object-name>lightarea</object-name>
-    <condition>
-          <not>
-              <property>/sim/rendering/rembrandt/enabled</property>
-          </not>
-    </condition>
+    <type>material</type>
+	<object-name>lightcone</object-name>
+    <transparency>0.05</transparency>
+    <emission>	
+        <red>0.2
+            <!--<expression>
+              <table>
+                <property>environment/visibility-m</property>
+                <entry><ind>0.0</ind><dep>0.8</dep></entry>
+                <entry><ind>3000.0</ind><dep>0.01</dep></entry>
+              </table>
+            </expression>-->
+        </red>	
+        <green>0.2</green>	
+        <blue>0.2</blue>
+    </emission>
 </animation>
 
 <!--  night redlight  -->
@@ -94,6 +125,7 @@ Public License for more details.
     <type>material</type>
     <object-name>blah</object-name>
 	<object-name>lightarea</object-name>
+    
     <condition>		
     <greater-than>		
         <property>/sim/time/sun-angle-rad</property>
@@ -109,7 +141,8 @@ Public License for more details.
 
 <!--  enable-hot  -->
 <animation>
- 	<object-name>lightarea</object-name>
+    <object-name>lightarea</object-name>
+    <object-name>lightcone</object-name>
     <enable-hot type="bool">false</enable-hot>
 </animation>
 
