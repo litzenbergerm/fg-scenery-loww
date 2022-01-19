@@ -18,7 +18,7 @@ OBJECT_SHARED Models/Airport/localizer.xml 16.5927 48.085417 167.95 254.24
 
 
 
-OBJECT_STATIC followme-animated.xml 16.54362592 48.12240531 169.99 -115.0
+OBJECT_STATIC followme-animated.xml 16.54130096 48.12315598 169.3443 0
 
 
 # LOWW tower from terrasync
