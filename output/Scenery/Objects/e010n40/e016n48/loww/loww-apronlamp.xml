@@ -34,67 +34,27 @@ Public License for more details.
 	<threshold>0.001</threshold>
 </animation>-->
 
+<!--  night emission  -->
 <animation>
     <type>select</type>
+    <object-name>lights</object-name>
     <object-name>lightarea</object-name>
     <condition>		
       <greater-than>		
         <property>/sim/time/sun-angle-rad</property>
         <value>1.49</value>
       </greater-than>
-      <not>
-          <property>/sim/rendering/rembrandt/enabled</property>
-      </not>
-    </condition>
-</animation>
-
-<!-- lightcone visibility depending on atmospheric visibility-->
-<animation>
-    <type>select</type>
-	<object-name>lightcone</object-name>
-    <condition>		
-      <less-than>		
-        <property>environment/visibility-m</property>
-        <value>3000.0</value>
-      </less-than>
-      <greater-than>		
-        <property>/sim/time/sun-angle-rad</property>
-        <value>1.49</value>
-      </greater-than>
-      <not>
-          <property>/sim/rendering/rembrandt/enabled</property>
-      </not>
     </condition>
 </animation>
 
 <animation>
     <type>material</type>
-	<object-name>lightcone</object-name>
-    <transparency>0.05</transparency>
-    <emission>	
-        <red>0.2
-            <!--<expression>
-              <table>
-                <property>environment/visibility-m</property>
-                <entry><ind>0.0</ind><dep>0.8</dep></entry>
-                <entry><ind>3000.0</ind><dep>0.01</dep></entry>
-              </table>
-            </expression>-->
-        </red>	
-        <green>0.2</green>	
-        <blue>0.2</blue>
-    </emission>
-</animation>
-
-<!--  night redlight  -->
-<animation>
-<type>material</type>
-	<object-name>redlight</object-name>
+    <object-name>lights</object-name>
     <condition>		
-    <greater-than>		
-        <property>/sim/time/sun-angle-rad</property>
-        <value>1.49</value>
-    </greater-than>
+        <greater-than>		
+            <property>/sim/time/sun-angle-rad</property>
+            <value>1.49</value>
+        </greater-than>
     </condition>
     <emission>	
         <red>1.0</red>	
@@ -103,53 +63,40 @@ Public License for more details.
     </emission>
 </animation>
 
-<!--  night floodlight  -->
+<!--  enable-hot  -->
 <animation>
-<type>material</type>
-	<object-name>floodlight</object-name>
-    <condition>		
-    <greater-than>		
-        <property>/sim/time/sun-angle-rad</property>
-        <value>1.49</value>
-    </greater-than>
-    </condition>
-    <emission>	
-        <red>0.9</red>	
-        <green>0.9</green>	
-        <blue>0.9</blue>
-    </emission>
+    <object-name>lightcone</object-name>
+    <object-name>lightarea</object-name>
+    <enable-hot type="bool">false</enable-hot>
 </animation>
 
-<!--  night emission  -->
+<!-- lightcone visibility depending on atmospheric visibility-->
+
+<animation>
+    <type>select</type>
+	<object-name>lightcone</object-name>
+    <condition>		
+      <less-than>		
+        <property>environment/visibility-m</property>
+        <value>1500.0</value>
+      </less-than>
+      <greater-than>		
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.49</value>
+      </greater-than>
+    </condition>
+</animation>
+
 <animation>
     <type>material</type>
-    <object-name>blah</object-name>
-	<object-name>lightarea</object-name>
-    
-    <condition>		
-    <greater-than>		
-        <property>/sim/time/sun-angle-rad</property>
-        <value>1.57</value>
-    </greater-than>
-    </condition>
+	<object-name>lightcone</object-name>
+    <object-name>lightarea</object-name>
+    <transparency>0.05</transparency>
     <emission>	
         <red>0.2</red>	
         <green>0.2</green>	
         <blue>0.2</blue>
     </emission>
-</animation>
-
-<!--  enable-hot  -->
-<animation>
-    <object-name>lightarea</object-name>
-    <object-name>lightcone</object-name>
-    <enable-hot type="bool">false</enable-hot>
-</animation>
-
-<animation>
-    <type>range</type>
-    <min-m>0</min-m>
-    <max-property>sim/rendering/static-lod/bare</max-property>
 </animation>
 
 </PropertyList>
