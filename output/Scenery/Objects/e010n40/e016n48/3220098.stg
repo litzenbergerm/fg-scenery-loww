@@ -16,10 +16,8 @@ OBJECT_SHARED Models/Airport/localizer.xml 16.576778 48.123064 171.39 74.23
 OBJECT_SHARED Models/Airport/localizer.xml 16.589522 48.104517 179.31 206.03
 OBJECT_SHARED Models/Airport/localizer.xml 16.5927 48.085417 167.95 254.24
 
-
-
-OBJECT_STATIC followme-animated.xml 16.54130096 48.12315598 169.3443 0
-
+# Animated followme car travelling from west to east
+OBJECT_STATIC followme-animated.xml 16.54861503 48.12426519 168.5120
 
 # LOWW tower from terrasync
 OBJECT_STATIC LOWW_tower.xml 16.56169 48.12259 171.27 225
@@ -33,10 +31,11 @@ OBJECT_STATIC loww/loww-cargo-east.xml 16.55499084 48.12384651 169.37 0.0
 OBJECT_STATIC loww/loww-north.xml 16.56875958 48.12631183 169.21 0.0
 OBJECT_STATIC loww/loww-businesspark-north.xml 16.56264209 48.12368309 170.09 0.0
 OBJECT_STATIC loww/loww-businesspark-south.xml 16.56017307 48.12163447 172.06 0.0
-OBJECT_STATIC loww/loww-terminals-west.xml 16.55866195 48.11963059 174.29 0.0
-OBJECT_STATIC loww/loww-terminals-east.xml 16.56444871 48.12030421 173.98 0.0
 OBJECT_STATIC loww/loww-tank.xml 16.56846178 48.12207301 172.16 0.0
 OBJECT_STATIC loww/loww-fire-east.xml 16.57478671 48.11319117 182.14 0.0
+OBJECT_STATIC loww/loww-terminals-west.xml 16.55867449 48.11935968 174.64 0.0
+
+OBJECT_STATIC loww/loww-terminals-east.xml 16.56629119 48.11855662 176.26 0.0
 
 # LOWW east radar towers
 OBJECT_STATIC loww/loww-radar-2.xml 16.577930 48.100608 187.0 0.0
@@ -73,59 +72,33 @@ OBJECT_STATIC loww/loww-fence-13.ac 16.5717628 48.1215263 172.85 0 0 0
 
 #OBJECT_SHARED fghome/Export/max-span-sign.xml 16.57538794 48.10941838 185.7822 0.0 0.0 -0.0
 
-# jetways with raiffeisen logo, pier-ost
-
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56171699 48.11823452 176.5 65.8 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56167899 48.11817792 176.5 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56118016 48.11795753 176.5 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56108449 48.11795345 176.5 312.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56052126 48.11813548 176.5 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56047995 48.11818808 176.5 256.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56045808 48.11858885 176 268.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56048767 48.11864295 176 168.0 0.0 -0.0
-
-# jetways with raiffeisen logo, pier-west, from east to west
-
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55826489 48.11999385 174 80.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55790908 48.11963567 174.5 80.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55753787 48.11941542 175 60.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55736513 48.11927585 175 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55706587 48.11936687 175 -30.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55645449 48.11966718 174 344.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55636389 48.11974502 174 296.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55639295 48.11999167 174 276.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55654240 48.12024937 174 240.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55691485 48.12050079 173 255.9 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55715677 48.12081656 173 242.1 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.55737202 48.12115945 173 247.1 0.0 -0.0
-
 # jetways with uniqa logo, pier-nord, south side, from west to east
 
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56501026 48.11840676     176.5 -30.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56505724 48.11844277     176.5 15.3 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56590292 48.11813127 177 330.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56595515 48.11814651     177 10.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56645096 48.11795179 177.5 340.6 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56699314 48.11777709 178 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56704599 48.11778905     177.5 12.6 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56753676 48.11759832 178 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56808176 48.11742292 178 341.1 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56812843 48.11743266          178 10.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56862351 48.11724328          178.4 340.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56917285 48.11706906 178.4 334.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56922317 48.11707884          178.3 0.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56971265 48.11688910          178.7 328.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56501026 48.11840676     176.5 -30.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56505724 48.11844277     176.5 15.3 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56590292 48.11813127 177 330.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56595515 48.11814651     177 10.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56645096 48.11795179 177.5 340.6 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56699314 48.11777709 178 340.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56704599 48.11778905     177.5 12.6 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56753676 48.11759832 178 340.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56808176 48.11742292 178 341.1 0.0 -0.0
+# OBJECT_STATIC loww/jetway-uniqa.xml 16.56812843 48.11743266          178 10.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-uniqa.xml 16.56862351 48.11724328          178.4 340.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen-ext.xml 16.56917285 48.11706906 178.4 334.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-uniqa.xml 16.56922317 48.11707884          178.3 0.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-uniqa.xml 16.56971265 48.11688910          178.7 328.0 0.0 -0.0
 
 # jetways with uniqa logo, pier-nord, north side, from east to west
 
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.57034967 48.11776296 177 162.7 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56980693 48.11794177 177 160.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56925764 48.11811673 177 142.2 0.0 -0.0
-OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56871416 48.11829556 177 166.5 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56816847 48.11847166      177 144.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56762498 48.11864824      176 172.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56708341 48.11882688      176 156.0 0.0 -0.0
-OBJECT_STATIC loww/jetway-uniqa.xml 16.56653932 48.11900366      176 196.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen.xml 16.57034967 48.11776296 177 162.7 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56980693 48.11794177 177 160.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56925764 48.11811673 177 142.2 0.0 -0.0
+# OBJECT_STATIC loww/jetway-raiffeisen.xml 16.56871416 48.11829556 177 166.5 0.0 -0.0
+# OBJECT_STATIC loww/jetway-uniqa.xml 16.56816847 48.11847166      177 144.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-uniqa.xml 16.56762498 48.11864824      176 172.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-uniqa.xml 16.56708341 48.11882688      176 156.0 0.0 -0.0
+# OBJECT_STATIC loww/jetway-uniqa.xml 16.56653932 48.11900366      176 196.0 0.0 -0.0
 
 # 'clutter' on apron, static AC and surounding objects
 
@@ -171,11 +144,11 @@ OBJECT_STATIC loww/loww-vds-gantryF04.xml 16.566373967481 48.1190073330959 175.6
 
 OBJECT_STATIC loww/loww-apronlamp.xml 16.5646601451947 48.1182293594541 176.6 180.0 0.0 0.0
 OBJECT_STATIC loww/loww-apronlamp.xml 16.5640341937652 48.1187300084989 175.9099999999999 180.0 0.0 0.0
-OBJECT_STATIC loww/loww-apronlamp.xml 16.5655552254996 48.1179588454399 177 180.0 0.0 0.0
-OBJECT_STATIC loww/loww-apronlamp.xml 16.5666408127614 48.1176055600678 177.49 180.0 0.0 0.0
-OBJECT_STATIC loww/loww-apronlamp.xml 16.5676991847436 48.1172542910606 177.96 180.0 0.0 0.0
-OBJECT_STATIC loww/loww-apronlamp.xml 16.568802915525 48.1168969632271 178.3999999999999 180.0 0.0 0.0
-OBJECT_STATIC loww/loww-apronlamp.xml 16.5699580529456 48.1167273830468 178.58 180.0 0.0 0.0
+#OBJECT_STATIC loww/loww-apronlamp.xml 16.5655552254996 48.1179588454399 177 180.0 0.0 0.0
+#OBJECT_STATIC loww/loww-apronlamp.xml 16.5666408127614 48.1176055600678 177.49 180.0 0.0 0.0
+#OBJECT_STATIC loww/loww-apronlamp.xml 16.5676991847436 48.1172542910606 177.96 180.0 0.0 0.0
+#OBJECT_STATIC loww/loww-apronlamp.xml 16.568802915525 48.1168969632271 178.3999999999999 180.0 0.0 0.0
+#OBJECT_STATIC loww/loww-apronlamp.xml 16.5699580529456 48.1167273830468 178.58 180.0 0.0 0.0
 OBJECT_STATIC loww/loww-apronlamp.xml 16.5640704808046 48.1169514710234 178.2599999999999 180.0 0.0 0.0
 OBJECT_STATIC loww/loww-apronlamp.xml 16.5655280102201 48.1164144657684 179.03 180.0 0.0 0.0
 OBJECT_STATIC loww/loww-apronlamp.xml 16.5669553004361 48.1159541710826 179.6399999999999 180.0 0.0 0.0
