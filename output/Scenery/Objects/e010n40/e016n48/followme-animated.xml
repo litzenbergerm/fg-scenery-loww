@@ -18,7 +18,10 @@ Public License for more details.
  <load> 
      
      <![CDATA[
-     var coords = [16.54130096,48.12315598,169.3443,16.54219077,48.12286270,169.5656,16.54375908,48.12235546,170.0071,16.54421381,48.12231690,170.0494,16.54444721,48.12238773,169.9888,16.54478313,48.12294322,169.4854,16.54505955,48.12303149,169.4121,16.54581813,48.12307453,169.3900,16.54759936,48.12252943,169.9571,16.55117069,48.12139024,171.3914,16.55153239,48.12142245,171.3880,16.55223209,48.12227883,170.5330,16.55267828,48.12231067,170.6122,16.55541323,48.12196623,171.1657,16.55859732,48.12082845,172.7977,16.55955013,48.12020199,173.6579,16.56041046,48.11951389,174.6083,16.56113474,48.11909567,175.2145,16.56280411,48.11849612,176.1340,16.56379804,48.11855832,176.1234,16.56415277,48.11867091,176.0013,16.56521219,48.11854848,176.2220,16.56980807,48.11705570,178.1874,16.57015583,48.11681688,178.4717,16.56966178,48.11615356,179.3167,];
+     var coords =
+     [16.54861503,48.12426519,168.5120,16.54809792,48.12369664,168.9393,16.54765315,48.12309320,169.4385,16.54737010,48.12272473,169.7611,16.54708576,48.12255051,169.9153,16.54672045,48.12198280,170.4530,16.54673978,48.12177870,170.6614,16.54877148,48.12114538,171.4664,16.55073193,48.12050433,172.3725,16.55297516,48.11978677,173.4782,16.55478467,48.11919834,174.4304,16.55671056,48.11861483,175.4119,16.55895682,48.11787514,176.6441,16.56047009,48.11740163,177.4280,16.56269916,48.11667603,178.5768,16.56444743,48.11609484,179.4411,16.56670031,48.11536700,180.4244,16.56827290,48.11486265,181.0265,16.56877509,48.11493845,180.9008,16.56926756,48.11573453,179.8570,16.56965309,48.11617273,179.2932,16.57002908,48.11669857,178.6229,16.56997466,48.11698161,178.2746,16.56970500,48.11708741,178.1505,16.56904316,48.11729479,177.9046,16.56775885,48.11772637,177.3584,16.56547973,48.11847617,176.3285,16.56461584,48.11861272,176.1053,16.56424906,48.11871220,175.9544,16.56353147,48.11851245,176.1649,16.56280779,48.11849658,176.1337,16.56210468,48.11866618,175.8574,16.56163807,48.11886561,175.5579,];
+     
+ #    [16.54130096,48.12315598,169.3443,16.54219077,48.12286270,169.5656,16.54375908,48.12235546,170.0071,16.54421381,48.12231690,170.0494,16.54444721,48.12238773,169.9888,16.54478313,48.12294322,169.4854,16.54505955,48.12303149,169.4121,16.54581813,48.12307453,169.3900,16.54759936,48.12252943,169.9571,16.55117069,48.12139024,171.3914,16.55153239,48.12142245,171.3880,16.55223209,48.12227883,170.5330,16.55267828,48.12231067,170.6122,16.55541323,48.12196623,171.1657,16.55859732,48.12082845,172.7977,16.55955013,48.12020199,173.6579,16.56041046,48.11951389,174.6083,16.56113474,48.11909567,175.2145,16.56280411,48.11849612,176.1340,16.56379804,48.11855832,176.1234,16.56415277,48.11867091,176.0013,16.56521219,48.11854848,176.2220,16.56980807,48.11705570,178.1874,16.57015583,48.11681688,178.4717,16.56966178,48.11615356,179.3167,];
      
      var n1=size(coords);
      var legs = [];
@@ -65,7 +68,6 @@ Public License for more details.
              setprop("sim/scenery/followme/travel-y-m", 0);
              setprop("sim/scenery/followme/up-m", 0);
              setprop("sim/scenery/followme/dir-deg", 0);
-             setprop("sim/scenery/followme/roll-deg", 0);
          }
          
          interpolate("sim/scenery/followme/travel-x-m", track[j][0], dt);
@@ -75,19 +77,19 @@ Public License for more details.
          # turn direction and turn time 
          if (ddir > 180) {
              # handle problem with sign change in direction, no turns > 180         
-             if (curdir<0) {
+             if (curdir < 0) {
                   setprop("sim/scenery/followme/dir-deg", 360+curdir);
                   interpolate("sim/scenery/followme/dir-deg", track[j][4], track[j][5]);
              } else if (track[j][4] < 0) {
                   interpolate("sim/scenery/followme/dir-deg", 360+track[j][4], track[j][5]);
-             }
+             } else {
+             #TODO
+                  interpolate("sim/scenery/followme/dir-deg", track[j][4]-360, track[j][5]);
+             }    
+             
          } else {
              interpolate("sim/scenery/followme/dir-deg", track[j][4], track[j][5]);
          }
-         
-         #roll in turn an back
-         #setprop("sim/scenery/followme/roll-deg", 10);
-         #interpolate("sim/scenery/followme/roll-deg", 0, track[j][5]);
          
          if (j<n) 
              settimer(func {nextmove(j+1);}, dt);          
@@ -106,20 +108,42 @@ Public License for more details.
     
 <path>followme-animated.ac</path>
 
-<!--<animation>
-    <type>rotate</type>
-    <object-name>Cube</object-name>
-    <property>sim/scenery/followme/roll-deg</property>
-    <axis>
-       <x>1</x>
-       <y>0</y>
-       <z>0</z>
-    </axis>    
-</animation>-->
+<animation>
+    <type>select</type>
+	<object-name>Lights</object-name>
+    <condition>		
+      <greater-than>		
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.49</value>
+      </greater-than>
+    </condition>
+</animation>
+
+<animation>
+    <type>material</type>
+	<object-name>Lights</object-name>
+    <transparency>0.05</transparency>
+    <emission>	
+        <red>1.0</red>	
+        <green>1.0</green>	
+        <blue>1.0</blue>
+    </emission>
+</animation>
+
+<animation>
+    <type>material</type>
+	<object-name>Cube</object-name>
+    <emission>	
+        <red>0.2</red>	
+        <green>0.2</green>	
+        <blue>0.2</blue>
+    </emission>
+</animation>
 
 <animation>
     <type>translate</type>
     <object-name>Cube</object-name>
+    <object-name>Lights</object-name>
     <property>sim/scenery/followme/travel-x-m</property>
     <axis>
        <x>-1</x>
@@ -131,6 +155,7 @@ Public License for more details.
 <animation>
     <type>translate</type>
     <object-name>Cube</object-name>
+    <object-name>Lights</object-name>
     <property>sim/scenery/followme/travel-y-m</property>
     <axis>
        <x>0</x>
@@ -142,6 +167,7 @@ Public License for more details.
 <animation>
     <type>translate</type>
     <object-name>Cube</object-name>
+    <object-name>Lights</object-name>
     <property>sim/scenery/followme/up-m</property>
     <axis>
        <x>0</x>
@@ -153,6 +179,7 @@ Public License for more details.
 <animation>
     <type>rotate</type>
     <object-name>Cube</object-name>
+    <object-name>Lights</object-name>
     <property>sim/scenery/followme/dir-deg</property>
     <axis>
        <x>0</x>
