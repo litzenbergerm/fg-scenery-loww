@@ -16,13 +16,15 @@ OBJECT_SHARED Models/Airport/localizer.xml 16.576778 48.123064 171.39 74.23
 OBJECT_SHARED Models/Airport/localizer.xml 16.589522 48.104517 179.31 206.03
 OBJECT_SHARED Models/Airport/localizer.xml 16.5927 48.085417 167.95 254.24
 
+OBJECT_STATIC fischamend-watertower.ac 16.619257 48.111278 173.0 0.0 0.0
+
 # Animated followme car travelling from west to east
 OBJECT_STATIC followme-animated.xml 16.54861503 48.12426519 168.5120
 
 # LOWW tower from terrasync
 OBJECT_STATIC LOWW_tower.xml 16.56169 48.12259 171.27 225
 
-# static airport objects, building groups
+static airport objects, building groups
 OBJECT_STATIC loww/loww-ga.xml 16.53702474 48.12804987 167.43 0.0
 OBJECT_STATIC loww/loww-hangars.xml 16.54538735 48.12651239 167.22 0.0
 OBJECT_STATIC loww/loww-cargo-west.xml 16.55152551 48.12455633 168.53 0.0
@@ -33,7 +35,9 @@ OBJECT_STATIC loww/loww-businesspark-south.xml 16.56017307 48.12163447 172.06 0.
 OBJECT_STATIC loww/loww-tank.xml 16.56846178 48.12207301 172.16 0.0
 OBJECT_STATIC loww/loww-fire-east.xml 16.57478671 48.11319117 182.14 0.0
 OBJECT_STATIC loww/loww-terminals-west.xml 16.55867449 48.11935968 174.64 0.0
-OBJECT_STATIC loww/loww-terminals-east.xml 16.56697717 48.11853980 176.31 0.0
+OBJECT_STATIC loww/loww-terminals-ctr.xml 16.56371558 48.12044687 173.75 0.0
+OBJECT_STATIC loww/loww-terminals-east.xml 16.56798225 48.11803649 176.97 0.0
+OBJECT_SHARED Models/Airport/Jetway/jetway.xml 16.56501297 48.11843 176.9219 340.5
 
 # LOWW east radar towers
 OBJECT_STATIC loww/loww-radar-2.xml 16.577930 48.100608 187.0 0.0
