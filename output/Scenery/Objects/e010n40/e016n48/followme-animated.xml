@@ -84,7 +84,8 @@ Public License for more details.
                   interpolate("sim/scenery/followme/dir-deg", 360+track[j][4], track[j][5]);
              } else {
              #TODO
-                  interpolate("sim/scenery/followme/dir-deg", track[j][4]-360, track[j][5]);
+                  setprop("sim/scenery/followme/dir-deg", curdir-360);
+                  interpolate("sim/scenery/followme/dir-deg", track[j][4], track[j][5]);
              }    
              
          } else {
