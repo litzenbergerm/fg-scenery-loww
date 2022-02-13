@@ -16,7 +16,7 @@ OBJECT_SHARED Models/Airport/localizer.xml 16.576778 48.123064 171.39 74.23
 OBJECT_SHARED Models/Airport/localizer.xml 16.589522 48.104517 179.31 206.03
 OBJECT_SHARED Models/Airport/localizer.xml 16.5927 48.085417 167.95 254.24
 
-OBJECT_STATIC fischamend-watertower.ac 16.619257 48.111278 173.0 0.0 0.0
+OBJECT_STATIC fischamend-watertower.xml 16.619257 48.111278 173.0 0.0 0.0
 
 # Animated followme car travelling from west to east
 OBJECT_STATIC followme-animated.xml 16.54861503 48.12426519 168.5120

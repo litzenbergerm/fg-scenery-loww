@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- LOWW airport scenery model for the Flightgear flight simulator.
+
+This program is free software: you can redistribute it and/or modify it under 
+the terms of the GNU General Public License as published by the Free Software Foundation, 
+either version 2 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT 
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY 
+or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General 
+Public License for more details.
+
+Model by M.Litzenberger (litzi on forum).
+-->
+
+<PropertyList>
+
+    <path>fischamend-watertower.ac</path>
+    
+    <model>
+        <path>Models/Effects/RedLight10000.xml</path>
+        <offsets>
+          <x-m>0</x-m>
+          <y-m>0</y-m>
+          <z-m>52</z-m>
+        </offsets>
+    </model>
+</PropertyList>
