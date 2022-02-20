@@ -21,6 +21,9 @@ var ALIGN2GROUND = 0;
 # from W to E
 
 var groups = [
+    {name: "loww-vds-pier-n-s", 
+       obj: ["vdswall.001","vdswall.002","vdswall.003"]
+    },
     {name: "loww-ga", 
        bb: [15.0, 16.540, 49.0, 48.123]
     },
@@ -43,10 +46,13 @@ var groups = [
        bb: [16.5565, 16.567, 48.12249, 48.121]
     },
     {name:"loww-terminals-west",
-       bb: [16.5555, 16.5617, 48.121, 48.116]
+       bb: [16.5555, 16.5621, 48.121, 48.116]
+    },
+    {name:"loww-terminals-ctr",
+       bb: [16.5621, 16.565377, 48.121, 48.116]
     },
     {name:"loww-terminals-east",
-       bb: [16.5617, 16.570, 48.121, 48.116]
+       bb: [16.565377, 16.574, 48.1214, 48.116]
     },
     {name:"loww-tank",
        bb: [16.567, 16.574, 48.124, 48.121] 
@@ -94,8 +100,7 @@ var do = func (fn, reflat=nil, reflon=nil) {
         g["refpoint"]=geo.Coord.new();
         g["objlist"]= {};
         g["cog"]= [0,0,0];
-        g["n"] = 0;
-        
+        g["n"] = 0;        
     }    
     
     var modelori = 0;
@@ -126,20 +131,32 @@ var do = func (fn, reflat=nil, reflon=nil) {
         thispos.dump(); 
             
         foreach(var g; groups) {
-            if (geoinside(thispos, g.bb)) {
-                print("splitup: add ", mainmodel.obj[i].name );
-                g.cog = add3d(g.cog, cog); # add to sum COG of group, meters
-                
-                g.model.addac(mainmodel, i);
-                g.objlist[g.n] = { 
-                      name: string.replace(mainmodel.obj[i].name, '"', "") , 
-                      tex:  string.replace(mainmodel.obj[i].texture , '"', "") ,
-                      bb:   bb,
-                      pos:  [thispos.lat(), thispos.lon(), thisalt],
-                      cog:  cog
-                      };     
-                g.n +=1;
-                
+            
+            var add_this_obj=0;
+            
+            if ( contains(g, "obj") ) {
+                if ( isin(mainmodel.obj[i].name, g.obj) >-1 ) 
+                   add_this_obj=1;
+            } else if ( contains(g, "bb") ) {        
+                if ( geoinside(thispos, g.bb) ) 
+                   add_this_obj=1;
+            } else {
+                die("splitup: wrong group list format");
+            }    
+            
+            if (add_this_obj) {
+                    print("splitup: add ", mainmodel.obj[i].name );
+                    g.cog = add3d(g.cog, cog); # add to sum COG of group, meters
+                    
+                    g.model.addac(mainmodel, i);
+                    g.objlist[g.n] = { 
+                          name: string.replace(mainmodel.obj[i].name, '"', "") , 
+                          tex:  string.replace(mainmodel.obj[i].texture , '"', "") ,
+                          bb:   bb,
+                          pos:  [thispos.lat(), thispos.lon(), thisalt],
+                          cog:  cog
+                          };     
+                    g.n +=1;
             }    
         }
     }
@@ -163,11 +180,15 @@ var do = func (fn, reflat=nil, reflon=nil) {
                 g.model.recentercog(i);
                 bb = g.model.bbox(i);
                 if (ALIGN2GROUND) {
+                    
                     # align all objects of group all to same to ground level z=0
                     var shiftz = -bb.min[1];
+                    
                 } else {
+                    
                     # align all objects of group to the terrain ground level
                     var shiftz = -bb.min[1] - (g.refpoint.alt() - g.objlist[i].pos[2]);
+                    
                 }    
                 g.model.transobj( [-g.cog[0], shiftz, -g.cog[2]], i);
             }
@@ -176,16 +197,8 @@ var do = func (fn, reflat=nil, reflon=nil) {
                  #combine all buildings into one model
                  var atlas = g.model.joinall(g.name);
                  g.atlas = atlas;
-                 
-                 #if (!ALIGN2GROUND) {
-                    # shift whole model min.z (index 1!) to ground level (but keep individual offsets)
-                    #bb = g.model.bbox();
-                    #g.model.transobj([0, -bb.min[1], 0]);
-                 #}
             }
-
             
-            #debug.dump(g.cog);
             g.model.save(pathout~g.name~".ac",2);
             
             outline = "OBJECT_STATIC loww/"~ g.name~".xml "~ fix(g.refpoint.lon(),8) ~" "~ fix(g.refpoint.lat(),8) ~" "~ fix(g.refpoint.alt(),2) ~" 0.0";
