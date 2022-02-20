@@ -21,8 +21,8 @@ var ALIGN2GROUND = 0;
 # from W to E
 
 var groups = [
-    {name: "loww-vds-pier-n-s", 
-       obj: ["vdswall.001","vdswall.002","vdswall.003"]
+    {name: "loww-vds-gantry-s", 
+       obj: ["vds.001","vds.002","vds.003","vds.004","vds.005"]
     },
     {name: "loww-ga", 
        bb: [15.0, 16.540, 49.0, 48.123]
@@ -100,7 +100,7 @@ var do = func (fn, reflat=nil, reflon=nil) {
         g["refpoint"]=geo.Coord.new();
         g["objlist"]= {};
         g["cog"]= [0,0,0];
-        g["n"] = 0;        
+        g["n"] = 0;   
     }    
     
     var modelori = 0;
@@ -135,7 +135,8 @@ var do = func (fn, reflat=nil, reflon=nil) {
             var add_this_obj=0;
             
             if ( contains(g, "obj") ) {
-                if ( isin(mainmodel.obj[i].name, g.obj) >-1 ) 
+                var obj_in_list = isin( string.replace(mainmodel.obj[i].name,'"','') , g.obj );
+                if ( obj_in_list != -1) 
                    add_this_obj=1;
             } else if ( contains(g, "bb") ) {        
                 if ( geoinside(thispos, g.bb) ) 
@@ -145,7 +146,7 @@ var do = func (fn, reflat=nil, reflon=nil) {
             }    
             
             if (add_this_obj) {
-                    print("splitup: add ", mainmodel.obj[i].name );
+                    print("splitup: add ", mainmodel.obj[i].name, " to ", g.name );
                     g.cog = add3d(g.cog, cog); # add to sum COG of group, meters
                     
                     g.model.addac(mainmodel, i);
@@ -203,7 +204,10 @@ var do = func (fn, reflat=nil, reflon=nil) {
             
             outline = "OBJECT_STATIC loww/"~ g.name~".xml "~ fix(g.refpoint.lon(),8) ~" "~ fix(g.refpoint.lat(),8) ~" "~ fix(g.refpoint.alt(),2) ~" 0.0";
             io.write(f1, outline~"\n");
-        }
+        } else {
+            print("splitup: ** Warning ** group has no objects ", g.name);
+        }    
+            
         
         # add2stg(stg, refpoint[j], outline);
    }
@@ -221,12 +225,15 @@ var do = func (fn, reflat=nil, reflon=nil) {
       
       if (JOINALL) {
           
+        if (!contains(g, "atlas"))
+             die("splitup: group has no texture atlas! ", g.name);
+             
         # texture-atlas file.
         io.write(f, animation_preamble ); 
         io.write(f, "  <object-name>"~ g.name ~"</object-name>\n" ); 
         io.write(f, "  <texture>"~ makelit( g.name ~ ".png" ) ~"</texture>\n"); 
-        io.write(f, animation_post ); 
-
+        io.write(f, animation_post );
+                 
         # make the list of texture files, that go into the texture atlas.
         var a = io.open(pathout ~ g.name ~ ".atlas", "w");
         foreach(var u; g.atlas)
